@@ -160,7 +160,7 @@ export default function SellCarPage() {
                   </div>
                 </div>
 
-                <div className="grid gap-3.5 sm:gap-4 sm:grid-cols-3">
+                <div className="grid gap-3.5 sm:gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
                   <div>
                     <label className="block text-xs font-bold uppercase text-neutral-700">Model Year</label>
                     <select

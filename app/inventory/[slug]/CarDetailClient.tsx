@@ -247,29 +247,29 @@ export default function CarDetailClient({
               </h2>
             </div>
 
-            <dl className="mt-5 sm:mt-6 grid grid-cols-2 gap-2.5 sm:gap-4 lg:grid-cols-4 text-xs">
-              <div className="rounded-xl sm:rounded-2xl bg-white p-3 sm:p-4 border border-emerald-100">
-                <dt className="font-bold uppercase tracking-wider text-neutral-400 text-[0.625rem] sm:text-xs">CPLC Clearance</dt>
-                <dd className="mt-1 font-bold text-emerald-700 text-xs sm:text-sm">{car.cplcStatus}</dd>
-                <p className="mt-0.5 text-[0.625rem] sm:text-[0.6875rem] text-neutral-500">Physical certificate verified</p>
+            <dl className="mt-5 sm:mt-6 grid grid-cols-2 gap-2 sm:gap-4 lg:grid-cols-4 text-xs">
+              <div className="rounded-xl sm:rounded-2xl bg-white p-2.5 sm:p-4 border border-emerald-100 min-w-0">
+                <dt className="font-bold uppercase tracking-wider text-neutral-400 text-[0.625rem] sm:text-xs truncate">CPLC Clearance</dt>
+                <dd className="mt-1 font-bold text-emerald-700 text-xs sm:text-sm truncate">{car.cplcStatus}</dd>
+                <p className="mt-0.5 text-[0.625rem] sm:text-[0.6875rem] text-neutral-500 truncate">Physical certificate verified</p>
               </div>
 
-              <div className="rounded-xl sm:rounded-2xl bg-white p-3 sm:p-4 border border-emerald-100">
-                <dt className="font-bold uppercase tracking-wider text-neutral-400 text-[0.625rem] sm:text-xs">Sindh Excise Biometric</dt>
-                <dd className="mt-1 font-bold text-neutral-900 text-xs sm:text-sm">{car.registration}</dd>
-                <p className="mt-0.5 text-[0.625rem] sm:text-[0.6875rem] text-neutral-500">On-spot transfer ready</p>
+              <div className="rounded-xl sm:rounded-2xl bg-white p-2.5 sm:p-4 border border-emerald-100 min-w-0">
+                <dt className="font-bold uppercase tracking-wider text-neutral-400 text-[0.625rem] sm:text-xs truncate">Sindh Excise Biometric</dt>
+                <dd className="mt-1 font-bold text-neutral-900 text-xs sm:text-sm truncate">{car.registration}</dd>
+                <p className="mt-0.5 text-[0.625rem] sm:text-[0.6875rem] text-neutral-500 truncate">On-spot transfer ready</p>
               </div>
 
-              <div className="rounded-xl sm:rounded-2xl bg-white p-3 sm:p-4 border border-emerald-100">
-                <dt className="font-bold uppercase tracking-wider text-neutral-400 text-[0.625rem] sm:text-xs">Auction / Import Grade</dt>
-                <dd className="mt-1 font-bold text-neutral-900 text-xs sm:text-sm">{car.auctionGrade}</dd>
-                <p className="mt-0.5 text-[0.625rem] sm:text-[0.6875rem] text-neutral-500">Verifiable sheet online</p>
+              <div className="rounded-xl sm:rounded-2xl bg-white p-2.5 sm:p-4 border border-emerald-100 min-w-0">
+                <dt className="font-bold uppercase tracking-wider text-neutral-400 text-[0.625rem] sm:text-xs truncate">Auction / Import Grade</dt>
+                <dd className="mt-1 font-bold text-neutral-900 text-xs sm:text-sm truncate">{car.auctionGrade}</dd>
+                <p className="mt-0.5 text-[0.625rem] sm:text-[0.6875rem] text-neutral-500 truncate">Verifiable sheet online</p>
               </div>
 
-              <div className="rounded-xl sm:rounded-2xl bg-white p-3 sm:p-4 border border-emerald-100">
-                <dt className="font-bold uppercase tracking-wider text-neutral-400 text-[0.625rem] sm:text-xs">Mileage Verification</dt>
-                <dd className="mt-1 font-bold text-neutral-900 text-xs sm:text-sm">{car.mileage}</dd>
-                <p className="mt-0.5 text-[0.625rem] sm:text-[0.6875rem] text-neutral-500">Guaranteed authentic</p>
+              <div className="rounded-xl sm:rounded-2xl bg-white p-2.5 sm:p-4 border border-emerald-100 min-w-0">
+                <dt className="font-bold uppercase tracking-wider text-neutral-400 text-[0.625rem] sm:text-xs truncate">Mileage Verification</dt>
+                <dd className="mt-1 font-bold text-neutral-900 text-xs sm:text-sm truncate">{car.mileage}</dd>
+                <p className="mt-0.5 text-[0.625rem] sm:text-[0.6875rem] text-neutral-500 truncate">Guaranteed authentic</p>
               </div>
             </dl>
           </div>

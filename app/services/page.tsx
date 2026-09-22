@@ -191,9 +191,9 @@ export default function ServicesPage() {
           <div className="mt-6 sm:mt-8 grid gap-4 sm:gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
             {KARACHI_SHOWROOM.bankingPartners.map((bp) => (
               <div key={bp.name} className="rounded-xl sm:rounded-2xl border border-neutral-200 bg-neutral-50 p-4 sm:p-5">
-                <div className="flex items-center justify-between">
+                <div className="flex flex-wrap items-center justify-between gap-1.5">
                   <h4 className="font-display text-xs sm:text-sm font-bold uppercase text-neutral-900">{bp.name}</h4>
-                  <span className="rounded-full bg-emerald-100 px-2 py-0.5 text-[0.625rem] font-bold uppercase text-emerald-800">
+                  <span className="rounded-full bg-emerald-100 px-2 py-0.5 text-[0.625rem] font-bold uppercase text-emerald-800 shrink-0">
                     {bp.type}
                   </span>
                 </div>

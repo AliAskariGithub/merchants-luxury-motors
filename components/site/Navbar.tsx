@@ -163,9 +163,18 @@ export default function Navbar() {
                 </span>
               </button>
 
-              {/* Expandable Search Filter Popover in Navbar - Responsive Width with Smooth Animation */}
+              {/* Mobile Dimmed Backdrop Overlay */}
               <div
-                className={`absolute -right-2 sm:right-0 top-12 z-50 w-[calc(100vw-1.5rem)] sm:w-[420px] max-w-[420px] overflow-hidden rounded-2xl border border-neutral-200 bg-white p-4 shadow-2xl transition-all duration-250 ease-out origin-top-right transform ${
+                className={`fixed inset-0 z-40 bg-neutral-950/50 backdrop-blur-xs transition-opacity duration-200 sm:hidden ${
+                  searchOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+                }`}
+                onClick={() => setSearchOpen(false)}
+                aria-hidden="true"
+              />
+
+              {/* Expandable Search Filter Popover in Navbar - Perfectly Centered & Responsive on Mobile */}
+              <div
+                className={`fixed left-3 right-3 top-20 z-50 max-h-[85vh] overflow-y-auto sm:overflow-visible sm:max-h-none sm:absolute sm:left-auto sm:right-0 sm:top-12 sm:w-[420px] sm:max-w-[420px] rounded-2xl border border-neutral-200 bg-white p-4 sm:p-5 shadow-2xl transition-all duration-200 ease-out origin-top sm:origin-top-right transform ${
                   searchOpen
                     ? "opacity-100 scale-100 translate-y-0 pointer-events-auto"
                     : "opacity-0 scale-95 -translate-y-2 pointer-events-none"
@@ -178,22 +187,33 @@ export default function Navbar() {
                   <button
                     type="button"
                     onClick={() => setSearchOpen(false)}
-                    className="text-neutral-400 hover:text-neutral-800 transition-colors"
+                    className="text-neutral-400 hover:text-neutral-800 transition-colors p-1"
+                    aria-label="Close search popover"
                   >
                     <Close className="h-4 w-4" />
                   </button>
                 </div>
 
                 <form onSubmit={handleSearchSubmit} className="space-y-3">
-                  <div>
+                  <div className="relative">
                     <input
                       type="text"
                       placeholder="Search model (e.g. Land Cruiser, S580, Taycan)..."
                       value={keyword}
                       onChange={(e) => setKeyword(e.target.value)}
-                      className="w-full rounded-xl border border-neutral-200 bg-neutral-50 px-3 py-2 text-base sm:text-xs font-medium text-neutral-900 placeholder:text-neutral-400 focus:border-amber-500 focus:bg-white focus:outline-none"
+                      className="w-full rounded-xl border border-neutral-200 bg-neutral-50 py-2.5 pl-3 pr-8 text-base sm:text-xs font-medium text-neutral-900 placeholder:text-neutral-400 focus:border-amber-500 focus:bg-white focus:outline-none"
                       autoFocus={searchOpen}
                     />
+                    {keyword && (
+                      <button
+                        type="button"
+                        onClick={() => setKeyword("")}
+                        className="absolute right-2.5 top-1/2 -translate-y-1/2 text-neutral-400 hover:text-neutral-700 p-0.5"
+                        aria-label="Clear keyword"
+                      >
+                        <Close className="h-3.5 w-3.5" />
+                      </button>
+                    )}
                   </div>
 
                   <div className="grid grid-cols-2 gap-2">
@@ -342,9 +362,19 @@ export default function Navbar() {
                 placeholder="Search 150+ cars..."
                 value={keyword}
                 onChange={(e) => setKeyword(e.target.value)}
-                className="w-full rounded-full border border-neutral-200 bg-neutral-50 py-2.5 pl-10 pr-4 text-xs font-medium text-neutral-900 placeholder:text-neutral-400 focus:border-amber-500 focus:bg-white focus:outline-none"
+                className="w-full rounded-full border border-neutral-200 bg-neutral-50 py-2.5 pl-10 pr-8 text-base sm:text-xs font-medium text-neutral-900 placeholder:text-neutral-400 focus:border-amber-500 focus:bg-white focus:outline-none"
               />
-              <SearchIcon className="absolute left-3.5 top-3 h-3.5 w-3.5 text-neutral-400" />
+              <SearchIcon className="absolute left-3.5 top-1/2 -translate-y-1/2 h-3.5 w-3.5 text-neutral-400" />
+              {keyword && (
+                <button
+                  type="button"
+                  onClick={() => setKeyword("")}
+                  className="absolute right-3.5 top-1/2 -translate-y-1/2 text-neutral-400 hover:text-neutral-700 p-0.5"
+                  aria-label="Clear search"
+                >
+                  <Close className="h-3.5 w-3.5" />
+                </button>
+              )}
             </form>
           </div>
 

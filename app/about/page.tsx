@@ -55,9 +55,9 @@ export default function AboutPage() {
           {KARACHI_SHOWROOM.metrics.map((m) => (
             <div
               key={m.label}
-              className="rounded-2xl sm:rounded-3xl border border-neutral-200 bg-white p-4 sm:p-6 text-center shadow-sm"
+              className="rounded-2xl sm:rounded-3xl border border-neutral-200 bg-white p-3.5 sm:p-6 text-center shadow-sm"
             >
-              <span className="font-display text-2xl font-black text-amber-600 sm:text-4xl">
+              <span className="font-display text-xl sm:text-3xl lg:text-4xl font-black text-amber-600 truncate block">
                 {m.value}
               </span>
               <p className="mt-1 font-display text-[0.625rem] sm:text-xs font-bold uppercase tracking-wider text-neutral-500">

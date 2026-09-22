@@ -153,17 +153,17 @@ export default function Models() {
                   </div>
 
                   {/* Price and CTA */}
-                  <div className="mt-auto flex flex-wrap sm:flex-nowrap items-center justify-between gap-2 border-t border-neutral-100 pt-3.5 sm:pt-4">
-                    <div>
-                      <span className="block text-[0.6rem] sm:text-xs font-semibold uppercase tracking-wider text-neutral-500">
+                  <div className="mt-auto flex items-center justify-between gap-2 border-t border-neutral-100 pt-3.5 sm:pt-4">
+                    <div className="min-w-0">
+                      <span className="block text-[0.6rem] sm:text-xs font-semibold uppercase tracking-wider text-neutral-500 truncate">
                         Showroom Price
                       </span>
-                      <span className="font-display text-lg sm:text-xl font-black text-neutral-900">
+                      <span className="font-display text-base sm:text-lg lg:text-xl font-black text-neutral-900 truncate block">
                         {car.priceFormatted}
                       </span>
                     </div>
 
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
                       <a
                         href={getWhatsAppUrl(`Hi! I'm interested in the ${car.name} priced at ${car.priceFormatted} at your Khalid Bin Waleed showroom.`)}
                         target="_blank"
@@ -176,7 +176,7 @@ export default function Models() {
 
                       <Link
                         href={`/inventory/${car.slug}`}
-                        className="inline-flex items-center gap-1.5 rounded-full bg-neutral-900 px-3.5 sm:px-4 py-2 sm:py-2.5 font-display text-[0.7rem] sm:text-xs font-bold uppercase tracking-wider text-white transition-colors hover:bg-amber-500 hover:text-black shrink-0"
+                        className="inline-flex items-center gap-1 sm:gap-1.5 rounded-full bg-neutral-900 px-3 sm:px-4 py-2 sm:py-2.5 font-display text-[0.7rem] sm:text-xs font-bold uppercase tracking-wider text-white transition-colors hover:bg-amber-500 hover:text-black shrink-0"
                       >
                         Details
                         <ArrowUpRight className="h-3.5 w-3.5" />
