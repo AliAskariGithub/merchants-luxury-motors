@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <defs>
+    <linearGradient id="fav-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#FDE68A" />
+      <stop offset="45%" stopColor="#F59E0B" />
+      <stop offset="100%" stopColor="#D97706" />
+    </linearGradient>
+    <linearGradient id="fav-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#1c1917" />
+      <stop offset="100%" stopColor="#09090b" />
+    </linearGradient>
+  </defs>
+
+  <!-- Large Bold Automotive Shield Background -->
+  <path
+    d="M24 2.5 L6 8.5 v14.5 c0 11 7.5 17.5 18 21.5 c10.5 -4 18 -10.5 18 -21.5 V8.5 L24 2.5 z"
+    fill="url(#fav-bg)"
+    stroke="url(#fav-gold)"
+    stroke-width="2.6"
+    stroke-linejoin="round"
+  />
+
+  <!-- Subtle Inner Inset Border for Luxury Depth -->
+  <path
+    d="M24 6.2 L10 11 v10.5 c0 8.5 5.8 13.8 14 17 c8.2 -3.2 14 -8.5 14 -17 V11 L24 6.2 z"
+    stroke="url(#fav-gold)"
+    stroke-width="1"
+    stroke-opacity="0.45"
+    fill="none"
+  />
+
+  <!-- Large Bold 'M' Monogram Centered for Tab Readability -->
+  <path
+    d="M15 28.5 V18.5 l6 7.5 a3.8 3.8 0 0 0 6 0 l6 -7.5 v10"
+    stroke="url(#fav-gold)"
+    stroke-width="3"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- 3 Crown Accents -->
+  <circle cx="24" cy="12.5" r="1.8" fill="url(#fav-gold)" />
+  <circle cx="19" cy="13.5" r="1.2" fill="url(#fav-gold)" />
+  <circle cx="29" cy="13.5" r="1.2" fill="url(#fav-gold)" />
+</svg>
