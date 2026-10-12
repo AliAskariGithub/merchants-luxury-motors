@@ -42,18 +42,19 @@ Every vehicle listed includes authentic Pakistani Rupee (PKR Crore/Lakh) pricing
 - **Staggered Link Entrance:** Cascading entrance animations for mobile navigation links and showroom contact badges.
 - **Integrated Search Filter Popover:** Expandable live search widget right in the navigation bar with make, body type, and PKR budget selectors.
 
-### 3. 🚗 Comprehensive Luxury Fleet Inventory (`/inventory`)
-- **Real Pakistani Market Vehicles:**
-  - Toyota Land Cruiser LC300 ZX (2024)
-  - Mercedes-Benz S580 4MATIC Long-Wheelbase (2023)
-  - Porsche Taycan 4S Cross Turismo Electric (2023)
-  - Lexus LX600 Ultra Luxury VIP 4-Seater (2024)
-  - Toyota Land Cruiser Prado 250 First Edition (2024)
-  - Haval H6 HEV Dedicated Hybrid (2024)
-  - Land Rover Defender 110 P400 X-Dynamic (2023)
-  - Audi e-tron GT quattro (2023)
-  - Honda Civic RS Turbo (2024)
-- **Multi-Parameter Filtering:** Real-time search by keyword, make (Toyota, Mercedes-Benz, Porsche, Haval, Audi, Lexus), body style (SUV, Sedan, Hybrid, EV), and price tier.
+### 3. 🚗 Comprehensive Fleet Inventory (`/inventory`)
+- **Pakistan's Top-Selling Vehicles Across Leading Brands:**
+  - Toyota Corolla Altis Grande 1.8 CVT-i (2024)
+  - Honda Civic RS 1.5L VTEC Turbo (2024)
+  - Honda City 1.5L Aspire CVT (2024)
+  - Suzuki Alto 660cc VXL AGS (2024)
+  - Toyota Yaris ATIV X 1.5L CVT (2024)
+  - Suzuki Swift GLX 1.2L CVT (2024)
+  - Kia Sportage 2.0L AWD (2024)
+  - Hyundai Tucson GLS Sport AWD (2024)
+  - Changan Alsvin 1.5L Lumiere DCT (2024)
+  - Toyota Fortuner Legender 2.8L 4x4 Diesel (2024)
+- **Multi-Parameter Filtering:** Real-time search by keyword, make (Toyota, Honda, Suzuki, Kia, Hyundai, Changan), body style (Sedans, SUVs, Hatchbacks), and price tier.
 - **Dual View Modes:** Grid card view and horizontal list view with touch-scrollable category tabs.
 
 ### 4. 🔍 Deep Vehicle Detail Experience (`/inventory/[slug]`)

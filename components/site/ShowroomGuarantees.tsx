@@ -8,9 +8,10 @@ export default function ShowroomGuarantees() {
   return (
     <section id="services" className="scroll-mt-24 bg-white py-20 sm:py-24 lg:py-28">
       <div className="shell">
-        <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+        {/* Centered Section Header */}
+        <div className="flex flex-col items-center text-center gap-6">
           <SectionHeading
-            eyebrow="The Merchants Standard"
+            align="center"
             title={
               <>
                 Flawless Documentation.
@@ -18,13 +19,13 @@ export default function ShowroomGuarantees() {
                 Uncompromising Trust.
               </>
             }
-            description="Purchasing a luxury vehicle in Karachi requires complete certainty regarding customs duties, CPLC records, and Sindh Excise ownership. We guarantee 100% legal transparency on every vehicle in our showroom."
+            description="Purchasing a vehicle in Karachi requires complete certainty regarding customs duties, CPLC records, and Sindh Excise ownership. We guarantee 100% legal transparency on every vehicle in our showroom."
           />
 
-          <Reveal delay={120} className="shrink-0">
+          <Reveal delay={120}>
             <Link
               href="/services"
-              className="inline-flex items-center gap-2 rounded-full border border-neutral-300 bg-neutral-900 px-6 py-3 font-display text-xs font-bold uppercase tracking-wider text-white transition-all hover:bg-amber-500 hover:text-black"
+              className="inline-flex items-center gap-2 rounded-none border border-neutral-300 bg-neutral-900 px-6 py-3 font-display text-xs font-bold uppercase tracking-wider text-white transition-all hover:bg-amber-500 hover:text-black"
             >
               All Showroom Services
               <ArrowRight className="h-4 w-4" />
@@ -42,7 +43,7 @@ export default function ShowroomGuarantees() {
                     <span className="grid h-12 w-12 place-items-center rounded-2xl bg-amber-500/15 text-amber-600">
                       <ShieldCheck className="h-6 w-6" />
                     </span>
-                    <span className="rounded-full bg-emerald-100 px-3 py-1 font-display text-[0.625rem] font-bold uppercase tracking-wider text-emerald-800">
+                    <span className="rounded-none bg-emerald-100 px-3 py-1 font-display text-[0.625rem] font-bold uppercase tracking-wider text-emerald-800">
                       {item.badge}
                     </span>
                   </div>
@@ -88,7 +89,7 @@ export default function ShowroomGuarantees() {
                 href={getWhatsAppUrl("Hi! I would like to inquire about buying a car from outside Karachi with nationwide delivery.")}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full bg-emerald-500 px-6 py-3.5 font-display text-xs font-bold uppercase tracking-wider text-black transition-colors hover:bg-emerald-400"
+                className="inline-flex items-center gap-2 rounded-none bg-emerald-500 px-6 py-3.5 font-display text-xs font-bold uppercase tracking-wider text-black transition-colors hover:bg-emerald-400"
               >
                 <WhatsApp className="h-4 w-4" />
                 Inquire Delivery
@@ -96,7 +97,7 @@ export default function ShowroomGuarantees() {
 
               <Link
                 href="/about"
-                className="inline-flex items-center gap-2 rounded-full border border-neutral-700 bg-neutral-800 px-6 py-3.5 font-display text-xs font-bold uppercase tracking-wider text-white transition-colors hover:bg-neutral-700"
+                className="inline-flex items-center gap-2 rounded-none border border-neutral-700 bg-neutral-800 px-6 py-3.5 font-display text-xs font-bold uppercase tracking-wider text-white transition-colors hover:bg-neutral-700"
               >
                 Our Facility
                 <ArrowRight className="h-4 w-4" />

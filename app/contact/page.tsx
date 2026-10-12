@@ -23,14 +23,11 @@ export default function ContactPage() {
     <main className="min-h-screen bg-neutral-100 py-12 sm:py-16">
       <div className="shell">
         {/* Banner */}
-        <div className="rounded-2xl sm:rounded-3xl border border-neutral-200 bg-neutral-950 p-6 sm:p-14 text-white">
-          <span className="font-display text-xs font-bold uppercase tracking-[0.2em] text-amber-400">
-            Showroom Location & Contact
-          </span>
-          <h1 className="mt-3 font-display text-2xl font-black uppercase tracking-tight sm:text-4xl lg:text-5xl">
+        <div className="rounded-2xl sm:rounded-3xl border border-neutral-200 bg-neutral-950 p-6 sm:p-14 text-white text-center flex flex-col items-center">
+          <h1 className="mt-1 font-display text-2xl font-black uppercase tracking-tight sm:text-4xl lg:text-5xl">
             Visit Our Karachi Showroom
           </h1>
-          <p className="mt-3 sm:mt-4 max-w-2xl text-xs sm:text-base leading-relaxed text-neutral-300">
+          <p className="mt-3 sm:mt-4 max-w-2xl mx-auto text-xs sm:text-base leading-relaxed text-neutral-300">
             Located on Main Khalid Bin Waleed Road, P.E.C.H.S., Karachi. Walk in during our regular
             showroom hours or reach out directly to schedule a private viewing or test drive.
           </p>
@@ -59,14 +56,14 @@ export default function ContactPage() {
                     href={getWhatsAppUrl(`Hi! I just sent a message through your contact form. My name is ${formData.name}.`)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 rounded-full bg-emerald-600 px-6 py-3 font-display text-xs font-bold uppercase text-white hover:bg-emerald-500"
+                    className="inline-flex items-center justify-center gap-2 rounded-none bg-emerald-600 px-6 py-3 font-display text-xs font-bold uppercase text-white hover:bg-emerald-500"
                   >
                     <WhatsApp className="h-4 w-4" /> Message on WhatsApp
                   </a>
                   <button
                     type="button"
                     onClick={() => setSubmitted(false)}
-                    className="rounded-full border border-neutral-300 px-6 py-3 font-display text-xs font-bold uppercase text-neutral-700 hover:bg-neutral-100"
+                    className="rounded-none border border-neutral-300 px-6 py-3 font-display text-xs font-bold uppercase text-neutral-700 hover:bg-neutral-100"
                   >
                     Send Another Message
                   </button>
@@ -75,9 +72,6 @@ export default function ContactPage() {
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5">
                 <div>
-                  <span className="font-display text-xs font-bold uppercase tracking-[0.2em] text-amber-600">
-                    Direct Inquiry
-                  </span>
                   <h2 className="mt-1 font-display text-xl sm:text-2xl font-black uppercase text-neutral-900">
                     Send Us a Message
                   </h2>
@@ -154,7 +148,7 @@ export default function ContactPage() {
 
                 <button
                   type="submit"
-                  className="w-full rounded-2xl bg-neutral-950 py-3.5 sm:py-4 font-display text-xs font-bold uppercase tracking-wider text-white hover:bg-amber-500 hover:text-black transition-colors shadow-md"
+                  className="w-full rounded-none bg-neutral-950 py-3.5 sm:py-4 font-display text-xs font-bold uppercase tracking-wider text-white hover:bg-amber-500 hover:text-black transition-colors shadow-md"
                 >
                   Send Message to Showroom
                 </button>
@@ -165,10 +159,7 @@ export default function ContactPage() {
           {/* Right Column: Physical Address, Timings & Directions (5 Cols) */}
           <div className="lg:col-span-5 space-y-4 sm:space-y-6">
             <div className="rounded-2xl sm:rounded-3xl border border-neutral-200 bg-neutral-900 p-5 sm:p-8 text-white">
-              <span className="font-display text-xs font-bold uppercase tracking-[0.2em] text-amber-400">
-                Karachi Flagship Address
-              </span>
-              <h3 className="mt-2 font-display text-lg sm:text-xl font-bold uppercase text-white">
+              <h3 className="font-display text-lg sm:text-xl font-bold uppercase text-white">
                 {KARACHI_SHOWROOM.name}
               </h3>
 
@@ -232,7 +223,7 @@ export default function ContactPage() {
                   href={getWhatsAppUrl("Hi! I am navigating to your showroom on Khalid Bin Waleed Road right now.")}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex w-full items-center justify-center gap-2 rounded-full bg-emerald-500 py-3 font-display text-xs font-bold uppercase tracking-wider text-black hover:bg-emerald-400 transition-colors"
+                  className="flex w-full items-center justify-center gap-2 rounded-none bg-emerald-500 py-3 font-display text-xs font-bold uppercase tracking-wider text-black hover:bg-emerald-400 transition-colors"
                 >
                   <WhatsApp className="h-4 w-4" /> WhatsApp Us for Live Location
                 </a>

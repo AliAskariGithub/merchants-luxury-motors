@@ -109,8 +109,8 @@ export default function ShowroomHero() {
           <Reveal delay={140}>
             <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-neutral-300 sm:text-base px-2">
               Serving Karachi for over 18 years on Main Khalid Bin Waleed Road. Explore Pakistan&apos;s
-              most exclusive collection of Land Cruisers, Mercedes-Benz, Porsche, hybrids and exotic
-              imports with complete peace of mind.
+              most-selling cars including Toyota Corolla, Honda Civic, Suzuki Alto, and leading brand sedans
+              and SUVs with complete peace of mind.
             </p>
           </Reveal>
 
@@ -118,7 +118,7 @@ export default function ShowroomHero() {
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 max-w-md mx-auto sm:max-w-none">
               <Link
                 href="/inventory"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 rounded-full bg-amber-500 px-7 sm:px-8 py-3.5 font-display text-xs font-bold uppercase tracking-wider text-neutral-950 shadow-md transition-all duration-300 hover:bg-amber-400 hover:shadow-[0_8px_25px_rgba(245,158,11,0.4)]"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 rounded-none bg-amber-500 px-7 sm:px-8 py-3.5 font-display text-xs font-bold uppercase tracking-wider text-neutral-950 shadow-md transition-all duration-300 hover:bg-amber-400 hover:shadow-[0_8px_25px_rgba(245,158,11,0.4)]"
               >
                 Explore In-Stock Cars
                 <ArrowRight className="h-4 w-4" />
@@ -127,7 +127,7 @@ export default function ShowroomHero() {
               <button
                 type="button"
                 onClick={() => setShowTourModal(true)}
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 rounded-full border border-white/25 bg-black/40 px-6 sm:px-7 py-3.5 font-display text-xs font-semibold text-white backdrop-blur transition-all duration-300 hover:border-white/50 hover:bg-white/15"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 rounded-none border border-white/25 bg-black/40 px-6 sm:px-7 py-3.5 font-display text-xs font-semibold text-white backdrop-blur transition-all duration-300 hover:border-white/50 hover:bg-white/15"
               >
                 <Play className="h-4 w-4 text-amber-400" />
                 Watch Showroom Tour

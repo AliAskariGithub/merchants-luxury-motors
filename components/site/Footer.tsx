@@ -13,12 +13,12 @@ const quickLinks = [
 ];
 
 const popularVehicles = [
-  { label: "Toyota Land Cruiser LC300 ZX", href: "/inventory/land-cruiser-lc300-zx" },
-  { label: "Mercedes-Benz S-Class S580", href: "/inventory/mercedes-benz-s580-4matic" },
-  { label: "Porsche Taycan 4S Cross Turismo", href: "/inventory/porsche-taycan-4s" },
-  { label: "Toyota Prado TX-L 2.8L Diesel", href: "/inventory/toyota-prado-txl-2024" },
-  { label: "Haval H6 HEV Hybrid", href: "/inventory/haval-h6-hev" },
-  { label: "Audi e-tron GT Quattro", href: "/inventory/audi-etron-gt" },
+  { label: "Toyota Corolla Altis Grande 1.8", href: "/inventory/toyota-corolla-altis-grande" },
+  { label: "Honda Civic RS 1.5L Turbo", href: "/inventory/honda-civic-rs-turbo" },
+  { label: "Honda City 1.5L Aspire CVT", href: "/inventory/honda-city-aspire" },
+  { label: "Suzuki Alto 660cc VXL AGS", href: "/inventory/suzuki-alto-vxl" },
+  { label: "Toyota Yaris ATIV X 1.5L", href: "/inventory/toyota-yaris-ativ-x" },
+  { label: "Kia Sportage 2.0L AWD", href: "/inventory/kia-sportage-awd" },
 ];
 
 export default function Footer() {

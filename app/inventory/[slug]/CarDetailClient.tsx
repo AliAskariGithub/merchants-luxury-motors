@@ -101,7 +101,7 @@ export default function CarDetailClient({
               href={getWhatsAppUrl(`Hi Merchants Luxury Motors! I am inquiring about the ${car.name} (${car.priceFormatted}) on display at your Khalid Bin Waleed showroom.`)}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-emerald-600 px-5 py-2.5 font-display text-xs font-bold uppercase tracking-wider text-white shadow hover:bg-emerald-500 transition-colors w-full sm:w-auto"
+              className="inline-flex items-center justify-center gap-2 rounded-none bg-emerald-600 px-5 py-2.5 font-display text-xs font-bold uppercase tracking-wider text-white shadow hover:bg-emerald-500 transition-colors w-full sm:w-auto"
             >
               <WhatsApp className="h-4 w-4" />
               WhatsApp Inquiry
@@ -110,7 +110,7 @@ export default function CarDetailClient({
             <button
               type="button"
               onClick={() => setAppointmentOpen(true)}
-              className="rounded-full bg-neutral-900 px-5 py-2.5 font-display text-xs font-bold uppercase tracking-wider text-white hover:bg-amber-500 hover:text-black transition-colors w-full sm:w-auto text-center"
+              className="rounded-none bg-neutral-900 px-5 py-2.5 font-display text-xs font-bold uppercase tracking-wider text-white hover:bg-amber-500 hover:text-black transition-colors w-full sm:w-auto text-center"
             >
               Book Private Viewing
             </button>
@@ -133,7 +133,7 @@ export default function CarDetailClient({
                     setActiveMediaTab("exterior");
                     setSelectedImageIndex(0);
                   }}
-                  className={`shrink-0 rounded-full px-3.5 sm:px-4 py-2 font-display text-[0.7rem] sm:text-xs font-bold uppercase tracking-wider transition-all ${
+                  className={`shrink-0 rounded-none px-3.5 sm:px-4 py-2 font-display text-[0.7rem] sm:text-xs font-bold uppercase tracking-wider transition-all ${
                     activeMediaTab === "exterior"
                       ? "bg-neutral-900 text-white shadow"
                       : "bg-neutral-100 text-neutral-600 hover:bg-neutral-200"
@@ -148,7 +148,7 @@ export default function CarDetailClient({
                     setActiveMediaTab("interior");
                     setSelectedImageIndex(0);
                   }}
-                  className={`shrink-0 rounded-full px-3.5 sm:px-4 py-2 font-display text-[0.7rem] sm:text-xs font-bold uppercase tracking-wider transition-all ${
+                  className={`shrink-0 rounded-none px-3.5 sm:px-4 py-2 font-display text-[0.7rem] sm:text-xs font-bold uppercase tracking-wider transition-all ${
                     activeMediaTab === "interior"
                       ? "bg-neutral-900 text-white shadow"
                       : "bg-neutral-100 text-neutral-600 hover:bg-neutral-200"
@@ -160,7 +160,7 @@ export default function CarDetailClient({
                 <button
                   type="button"
                   onClick={() => setActiveMediaTab("video")}
-                  className={`shrink-0 rounded-full px-3.5 sm:px-4 py-2 font-display text-[0.7rem] sm:text-xs font-bold uppercase tracking-wider transition-all inline-flex items-center gap-1.5 ${
+                  className={`shrink-0 rounded-none px-3.5 sm:px-4 py-2 font-display text-[0.7rem] sm:text-xs font-bold uppercase tracking-wider transition-all inline-flex items-center gap-1.5 ${
                     activeMediaTab === "video"
                       ? "bg-amber-500 text-black shadow"
                       : "bg-neutral-100 text-neutral-600 hover:bg-neutral-200"
@@ -436,14 +436,14 @@ export default function CarDetailClient({
               <button
                 type="button"
                 onClick={() => setAppointmentOpen(true)}
-                className="w-full rounded-full bg-amber-500 py-3 font-display text-xs font-bold uppercase tracking-wider text-black hover:bg-amber-400 transition-colors"
+                className="w-full rounded-none bg-amber-500 py-3 font-display text-xs font-bold uppercase tracking-wider text-black hover:bg-amber-400 transition-colors"
               >
                 Schedule VIP Appointment
               </button>
 
               <a
                 href={`tel:${KARACHI_SHOWROOM.phonePrimary}`}
-                className="flex w-full items-center justify-center gap-2 rounded-full border border-neutral-700 py-3 font-display text-xs font-bold uppercase tracking-wider text-neutral-300 hover:bg-neutral-800 transition-colors"
+                className="flex w-full items-center justify-center gap-2 rounded-none border border-neutral-700 py-3 font-display text-xs font-bold uppercase tracking-wider text-neutral-300 hover:bg-neutral-800 transition-colors"
               >
                 <Phone className="h-4 w-4" />
                 Call Showroom
@@ -515,7 +515,7 @@ export default function CarDetailClient({
             type="button"
             aria-label="Close Lightbox"
             onClick={() => setLightboxOpen(false)}
-            className="absolute right-4 top-4 sm:right-6 sm:top-6 grid h-9 w-9 sm:h-10 sm:w-10 place-items-center rounded-full bg-white/10 text-white hover:bg-white/20"
+            className="absolute right-4 top-4 sm:right-6 sm:top-6 grid h-9 w-9 sm:h-10 sm:w-10 place-items-center rounded-none bg-white/10 text-white hover:bg-white/20"
           >
             <Close className="h-5 w-5 sm:h-6 sm:w-6" />
           </button>
@@ -548,7 +548,7 @@ export default function CarDetailClient({
               <button
                 type="button"
                 onClick={() => setAppointmentOpen(false)}
-                className="grid h-8 w-8 place-items-center rounded-full text-neutral-400 hover:bg-neutral-100"
+                className="grid h-8 w-8 place-items-center rounded-none text-neutral-400 hover:bg-neutral-100"
               >
                 <Close className="h-4 w-4" />
               </button>
@@ -556,7 +556,7 @@ export default function CarDetailClient({
 
             {appointmentSubmitted ? (
               <div className="py-6 text-center">
-                <div className="mx-auto grid h-12 w-12 place-items-center rounded-full bg-emerald-100 text-emerald-600">
+                <div className="mx-auto grid h-12 w-12 place-items-center rounded-none bg-emerald-100 text-emerald-600">
                   <Check className="h-6 w-6" />
                 </div>
                 <h4 className="mt-4 font-display text-lg font-bold uppercase text-neutral-900">
@@ -572,7 +572,7 @@ export default function CarDetailClient({
                     setAppointmentSubmitted(false);
                     setAppointmentOpen(false);
                   }}
-                  className="mt-6 rounded-full bg-neutral-900 px-6 py-2.5 font-display text-xs font-bold uppercase text-white"
+                  className="mt-6 rounded-none bg-neutral-900 px-6 py-2.5 font-display text-xs font-bold uppercase text-white"
                 >
                   Close
                 </button>
@@ -592,7 +592,7 @@ export default function CarDetailClient({
                     placeholder="e.g. Tariq Mansoor"
                     value={userName}
                     onChange={(e) => setUserName(e.target.value)}
-                    className="mt-1 w-full rounded-xl border border-neutral-200 bg-neutral-50 p-3 text-base sm:text-sm focus:border-amber-500 focus:outline-none"
+                    className="mt-1 w-full rounded-none border border-neutral-200 bg-neutral-50 p-3 text-base sm:text-sm focus:border-amber-500 focus:outline-none"
                   />
                 </div>
 
@@ -604,7 +604,7 @@ export default function CarDetailClient({
                     placeholder="0300-1234567"
                     value={userPhone}
                     onChange={(e) => setUserPhone(e.target.value)}
-                    className="mt-1 w-full rounded-xl border border-neutral-200 bg-neutral-50 p-3 text-base sm:text-sm focus:border-amber-500 focus:outline-none"
+                    className="mt-1 w-full rounded-none border border-neutral-200 bg-neutral-50 p-3 text-base sm:text-sm focus:border-amber-500 focus:outline-none"
                   />
                 </div>
 
@@ -615,7 +615,7 @@ export default function CarDetailClient({
 
                 <button
                   type="submit"
-                  className="w-full rounded-xl bg-neutral-900 py-3 font-display text-xs font-bold uppercase tracking-wider text-white hover:bg-amber-500 hover:text-black transition-colors"
+                  className="w-full rounded-none bg-neutral-900 py-3 font-display text-xs font-bold uppercase tracking-wider text-white hover:bg-amber-500 hover:text-black transition-colors"
                 >
                   Confirm Appointment
                 </button>

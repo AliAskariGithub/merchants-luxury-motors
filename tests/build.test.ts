@@ -8,7 +8,7 @@ import {
   serialiseBuild,
 } from "../lib/build.ts";
 
-const car = getCar("land-cruiser-lc300-zx")!;
+const car = getCar("toyota-corolla-altis-grande")!;
 
 test("defaultBuild picks the first option of every group and no packs", () => {
   const build = defaultBuild(car);

@@ -76,7 +76,7 @@ function BookingFormContent() {
                 href={getWhatsAppUrl(`Hi! I just booked a viewing for the ${currentCar.name} on your website. My name is ${fields.fullName}.`)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-emerald-600 px-6 py-3 font-display text-xs font-bold uppercase tracking-wider text-white shadow hover:bg-emerald-500"
+                className="inline-flex items-center justify-center gap-2 rounded-none bg-emerald-600 px-6 py-3 font-display text-xs font-bold uppercase tracking-wider text-white shadow hover:bg-emerald-500"
               >
                 <WhatsApp className="h-4 w-4" />
                 Connect on WhatsApp Now
@@ -85,7 +85,7 @@ function BookingFormContent() {
               <button
                 type="button"
                 onClick={() => setSubmitted(false)}
-                className="rounded-full border border-neutral-300 px-6 py-3 font-display text-xs font-bold uppercase tracking-wider text-neutral-700 hover:bg-neutral-100"
+                className="rounded-none border border-neutral-300 px-6 py-3 font-display text-xs font-bold uppercase tracking-wider text-neutral-700 hover:bg-neutral-100"
               >
                 Book Another Car
               </button>
@@ -216,7 +216,7 @@ function BookingFormContent() {
 
             <button
               type="submit"
-              className="w-full rounded-full bg-amber-500 py-3.5 sm:py-4 font-display text-xs sm:text-sm font-bold uppercase tracking-wider text-neutral-950 transition-all hover:bg-amber-400 shadow-lg cursor-pointer"
+              className="w-full rounded-none bg-amber-500 py-3.5 sm:py-4 font-display text-xs sm:text-sm font-bold uppercase tracking-wider text-neutral-950 transition-all hover:bg-amber-400 shadow-lg cursor-pointer"
             >
               Confirm Showroom Appointment
             </button>
@@ -227,10 +227,7 @@ function BookingFormContent() {
       {/* Showroom Details & Direct Contact Card */}
       <div className="space-y-4 sm:space-y-6">
         <div className="rounded-2xl sm:rounded-3xl border border-neutral-200 bg-neutral-900 p-5 sm:p-8 text-white">
-          <span className="font-display text-xs font-bold uppercase tracking-[0.2em] text-amber-400">
-            Showroom Location
-          </span>
-          <h3 className="mt-2 font-display text-lg sm:text-xl font-bold uppercase text-white">
+          <h3 className="font-display text-lg sm:text-xl font-bold uppercase text-white">
             {KARACHI_SHOWROOM.name}
           </h3>
 
@@ -278,7 +275,7 @@ function BookingFormContent() {
               href={getWhatsAppUrl()}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex w-full items-center justify-center gap-2 rounded-full border border-emerald-500/40 bg-emerald-950/40 py-3 text-xs font-semibold text-emerald-300 transition-colors hover:bg-emerald-900/60 hover:text-white"
+              className="flex w-full items-center justify-center gap-2 rounded-none border border-emerald-500/40 bg-emerald-950/40 py-3 text-xs font-semibold text-emerald-300 transition-colors hover:bg-emerald-900/60 hover:text-white"
             >
               <WhatsApp className="h-4 w-4" />
               Instant WhatsApp Support
@@ -310,10 +307,7 @@ export default function Reserve() {
       <div className="shell">
         <Reveal>
           <div className="mx-auto max-w-3xl text-center mb-14">
-            <span className="font-display text-xs font-bold uppercase tracking-[0.2em] text-amber-600">
-              Visit Our Dealership
-            </span>
-            <h2 className="mt-3 font-display text-[clamp(2rem,4.5vw,3.2rem)] font-black uppercase tracking-tight text-neutral-900">
+            <h2 className="font-display text-[clamp(2rem,4.5vw,3.2rem)] font-black uppercase tracking-tight text-neutral-900">
               Experience the Vehicles in Person
             </h2>
             <p className="mt-3 text-sm text-neutral-600">

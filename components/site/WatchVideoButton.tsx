@@ -34,9 +34,9 @@ export default function WatchVideoButton({ className = "" }: { className?: strin
         ref={triggerRef}
         type="button"
         onClick={() => setOpen(true)}
-        className={`inline-flex h-13 cursor-pointer items-center justify-center gap-2.5 rounded-full border border-ink-200 bg-white px-7 font-display text-[0.875rem] font-bold uppercase tracking-[0.12em] text-ink-900 transition-[border-color,background-color,transform] duration-200 hover:border-ink-900 hover:bg-ink-50 active:translate-y-px ${className}`}
+        className={`inline-flex h-13 cursor-pointer items-center justify-center gap-2.5 rounded-none border border-ink-200 bg-white px-7 font-display text-[0.875rem] font-bold uppercase tracking-[0.12em] text-ink-900 transition-[border-color,background-color,transform] duration-200 hover:border-ink-900 hover:bg-ink-50 active:translate-y-px ${className}`}
       >
-        <span className="grid h-6 w-6 place-items-center rounded-full bg-ink-900 text-white">
+        <span className="grid h-6 w-6 place-items-center rounded-none bg-ink-900 text-white">
           <Play className="h-3 w-3" />
         </span>
         Watch Video

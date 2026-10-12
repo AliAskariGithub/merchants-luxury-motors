@@ -29,8 +29,8 @@ export default function Testimonials() {
     <section className="bg-white py-14 sm:py-24 lg:py-28">
       <div className="shell">
         <SectionHeading
-          eyebrow="Karachi Client Feedback"
-          title="Endorsed by Executives & Enthusiasts."
+          align="center"
+          title="Endorsed by Executives & Families Across Pakistan."
           description="Over 12,000 discerning clients across Clifton, DHA, PECHS, and nationwide have trusted Merchants Luxury Motors for their automotive investments."
         />
 
@@ -69,7 +69,7 @@ export default function Testimonials() {
                     type="button"
                     onClick={() => go(index - 1)}
                     aria-label="Previous review"
-                    className="grid h-9 w-9 sm:h-10 sm:w-10 place-items-center rounded-full border border-neutral-300 bg-white text-neutral-700 hover:bg-neutral-100 shadow-sm"
+                    className="grid h-9 w-9 sm:h-10 sm:w-10 place-items-center rounded-none border border-neutral-300 bg-white text-neutral-700 hover:bg-neutral-100 shadow-sm transition-colors"
                   >
                     <ChevronLeft className="h-4 w-4" />
                   </button>
@@ -77,7 +77,7 @@ export default function Testimonials() {
                     type="button"
                     onClick={() => go(index + 1)}
                     aria-label="Next review"
-                    className="grid h-9 w-9 sm:h-10 sm:w-10 place-items-center rounded-full border border-neutral-300 bg-white text-neutral-700 hover:bg-neutral-100 shadow-sm"
+                    className="grid h-9 w-9 sm:h-10 sm:w-10 place-items-center rounded-none border border-neutral-300 bg-white text-neutral-700 hover:bg-neutral-100 shadow-sm transition-colors"
                   >
                     <ChevronRight className="h-4 w-4" />
                   </button>
@@ -94,7 +94,7 @@ export default function Testimonials() {
                 type="button"
                 onClick={() => setIndex(i)}
                 aria-label={`Go to slide ${i + 1}`}
-                className={`h-2 rounded-full transition-all ${
+                className={`h-2 rounded-none transition-all ${
                   index === i ? "w-8 bg-neutral-900" : "w-2 bg-neutral-300"
                 }`}
               />

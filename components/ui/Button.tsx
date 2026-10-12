@@ -36,7 +36,7 @@ export function ButtonLink({
   return (
     <a
       {...rest}
-      className={`inline-flex items-center justify-center gap-2 rounded-full font-display font-bold uppercase tracking-[0.12em] transition-[background-color,border-color,color,transform,box-shadow] duration-200 active:translate-y-px ${variants[variant]} ${sizes[size]} ${className}`}
+      className={`inline-flex items-center justify-center gap-2 rounded-none font-display font-bold uppercase tracking-[0.12em] transition-[background-color,border-color,color,transform,box-shadow] duration-200 active:translate-y-px ${variants[variant]} ${sizes[size]} ${className}`}
     >
       {children}
     </a>
@@ -62,7 +62,7 @@ export function Button({
     <button
       {...rest}
       type={type}
-      className={`inline-flex cursor-pointer items-center justify-center gap-2 rounded-full font-display font-bold uppercase tracking-[0.12em] transition-[background-color,border-color,color,transform,box-shadow] duration-200 disabled:cursor-not-allowed disabled:opacity-60 active:translate-y-px ${variants[variant]} ${sizes[size]} ${className}`}
+      className={`inline-flex cursor-pointer items-center justify-center gap-2 rounded-none font-display font-bold uppercase tracking-[0.12em] transition-[background-color,border-color,color,transform,box-shadow] duration-200 disabled:cursor-not-allowed disabled:opacity-60 active:translate-y-px ${variants[variant]} ${sizes[size]} ${className}`}
     >
       {children}
     </button>

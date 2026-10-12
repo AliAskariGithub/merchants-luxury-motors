@@ -4,9 +4,9 @@ import { cars, carSlugs, getCar } from "../lib/cars.ts";
 
 test("exposes the Karachi showroom car inventory", () => {
   assert.ok(cars.length >= 8);
-  assert.ok(carSlugs.includes("land-cruiser-lc300-zx"));
-  assert.ok(carSlugs.includes("mercedes-benz-s580-4matic"));
-  assert.ok(carSlugs.includes("porsche-taycan-4s"));
+  assert.ok(carSlugs.includes("toyota-corolla-altis-grande"));
+  assert.ok(carSlugs.includes("honda-civic-rs-turbo"));
+  assert.ok(carSlugs.includes("suzuki-alto-vxl"));
 });
 
 test("every car has the required option counts, PKR pricing, and specs", () => {
@@ -44,6 +44,6 @@ test("option ids are unique within each car and hex colours are valid", () => {
 });
 
 test("getCar resolves known slugs and rejects unknown ones", () => {
-  assert.equal(getCar("land-cruiser-lc300-zx")?.shortName, "LC300 ZX");
+  assert.equal(getCar("toyota-corolla-altis-grande")?.shortName, "Corolla Grande");
   assert.equal(getCar("nope"), undefined);
 });

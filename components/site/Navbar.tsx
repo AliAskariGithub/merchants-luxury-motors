@@ -150,7 +150,7 @@ export default function Navbar() {
                 onClick={() => setSearchOpen(!searchOpen)}
                 aria-expanded={searchOpen}
                 aria-label="Search vehicle inventory"
-                className={`flex items-center gap-1.5 sm:gap-2 rounded-full border px-2.5 py-2 sm:px-3.5 text-xs font-medium transition-all ${
+                className={`flex items-center gap-1.5 sm:gap-2 rounded-none border px-2.5 py-2 sm:px-3.5 text-xs font-medium transition-all ${
                   searchOpen
                     ? "border-amber-500 bg-amber-50/50 text-neutral-900 shadow-xs"
                     : "border-neutral-300 bg-neutral-50 text-neutral-700 hover:border-neutral-400 hover:bg-white"
@@ -275,7 +275,7 @@ export default function Navbar() {
 
                   <button
                     type="submit"
-                    className="flex w-full items-center justify-center gap-2 rounded-xl bg-amber-500 py-2.5 font-display text-xs font-bold uppercase tracking-wider text-neutral-950 shadow-sm transition-all hover:bg-amber-400 cursor-pointer"
+                    className="flex w-full items-center justify-center gap-2 rounded-none bg-amber-500 py-2.5 font-display text-xs font-bold uppercase tracking-wider text-neutral-950 shadow-sm transition-all hover:bg-amber-400 cursor-pointer"
                   >
                     <SearchIcon className="h-3.5 w-3.5" />
                     Search Available Cars
@@ -287,7 +287,7 @@ export default function Navbar() {
             {/* Primary Action Button: View Cars - hidden on compact mobile to give breathing room */}
             <Link
               href="/inventory"
-              className="hidden sm:inline-flex rounded-full bg-amber-500 px-5 py-2.5 font-display text-xs font-bold uppercase tracking-wider text-neutral-950 shadow-sm transition-all hover:bg-amber-400 shrink-0"
+              className="hidden sm:inline-flex rounded-none bg-amber-500 px-5 py-2.5 font-display text-xs font-bold uppercase tracking-wider text-neutral-950 shadow-sm transition-all hover:bg-amber-400 shrink-0"
             >
               View Cars
             </Link>
@@ -298,7 +298,7 @@ export default function Navbar() {
               onClick={() => setOpen(!open)}
               aria-label={open ? "Close navigation menu" : "Open navigation menu"}
               aria-expanded={open}
-              className="relative grid h-10 w-10 shrink-0 cursor-pointer place-items-center rounded-full border border-neutral-200 text-neutral-800 transition-all hover:bg-neutral-100 lg:hidden overflow-hidden"
+              className="relative grid h-10 w-10 shrink-0 cursor-pointer place-items-center rounded-none border border-neutral-200 text-neutral-800 transition-all hover:bg-neutral-100 lg:hidden overflow-hidden"
             >
               <span
                 className={`absolute transition-all duration-300 ease-out transform ${
@@ -431,7 +431,7 @@ export default function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setOpen(false)}
-              className="flex w-full items-center justify-center gap-2 rounded-full bg-emerald-600 px-5 py-3 font-display text-xs font-bold uppercase tracking-wider text-white shadow"
+              className="flex w-full items-center justify-center gap-2 rounded-none bg-emerald-600 px-5 py-3 font-display text-xs font-bold uppercase tracking-wider text-white shadow"
             >
               <WhatsApp className="h-4 w-4" />
               Chat on WhatsApp
@@ -439,7 +439,7 @@ export default function Navbar() {
             <Link
               href="/inventory"
               onClick={() => setOpen(false)}
-              className="flex w-full items-center justify-center rounded-full bg-amber-500 px-5 py-3 font-display text-xs font-bold uppercase tracking-wider text-neutral-950 hover:bg-amber-400"
+              className="flex w-full items-center justify-center rounded-none bg-amber-500 px-5 py-3 font-display text-xs font-bold uppercase tracking-wider text-neutral-950 hover:bg-amber-400"
             >
               Browse All Cars
             </Link>

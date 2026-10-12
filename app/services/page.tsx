@@ -101,14 +101,11 @@ export default function ServicesPage() {
     <main className="min-h-screen bg-neutral-100 py-12 sm:py-16">
       <div className="shell">
         {/* Banner */}
-        <div className="rounded-2xl sm:rounded-3xl border border-neutral-200 bg-neutral-950 p-6 sm:p-14 text-white">
-          <span className="font-display text-xs font-bold uppercase tracking-[0.2em] text-amber-400">
-            Showroom Services & Financing
-          </span>
-          <h1 className="mt-3 font-display text-2xl font-black uppercase tracking-tight sm:text-4xl lg:text-5xl">
+        <div className="rounded-2xl sm:rounded-3xl border border-neutral-200 bg-neutral-950 p-6 sm:p-14 text-white text-center flex flex-col items-center">
+          <h1 className="mt-1 font-display text-2xl font-black uppercase tracking-tight sm:text-4xl lg:text-5xl">
             Comprehensive Dealership Care
           </h1>
-          <p className="mt-3 sm:mt-4 max-w-2xl text-xs sm:text-base leading-relaxed text-neutral-300">
+          <p className="mt-3 sm:mt-4 max-w-2xl mx-auto text-xs sm:text-base leading-relaxed text-neutral-300">
             From Meezan Bank Islamic Car Ijarah to on-site Sindh Excise biometric transfers and
             nationwide delivery, Merchants Luxury Motors provides complete, transparent automotive
             solutions under one roof.
@@ -164,15 +161,12 @@ export default function ServicesPage() {
 
         {/* Bank Financing Comparison Box */}
         <div className="mt-12 sm:mt-16 rounded-2xl sm:rounded-3xl border border-neutral-200 bg-white p-5 sm:p-10 shadow-sm">
-          <div className="flex flex-col gap-4 sm:gap-6 lg:flex-row lg:items-center lg:justify-between border-b border-neutral-100 pb-5 sm:pb-6">
+          <div className="flex flex-col items-center text-center gap-4 sm:gap-6 border-b border-neutral-100 pb-5 sm:pb-6">
             <div>
-              <span className="font-display text-xs font-bold uppercase tracking-[0.2em] text-amber-600">
-                Authorized Banking Desk
-              </span>
-              <h2 className="mt-1 sm:mt-2 font-display text-xl sm:text-2xl font-black uppercase text-neutral-900">
+              <h2 className="font-display text-xl sm:text-2xl font-black uppercase text-neutral-900">
                 Partner Financial Institutions
               </h2>
-              <p className="text-xs text-neutral-500 mt-1">
+              <p className="text-xs text-neutral-500 mt-1 max-w-xl mx-auto">
                 Our in-house finance officers manage the application directly with senior bank managers.
               </p>
             </div>
@@ -181,7 +175,7 @@ export default function ServicesPage() {
               href={getWhatsAppUrl("Hi! I would like a quote for car financing with Meezan Bank / Bank Alfalah.")}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-neutral-900 px-6 py-3 font-display text-xs font-bold uppercase tracking-wider text-white hover:bg-amber-500 hover:text-black transition-colors w-full sm:w-auto"
+              className="inline-flex items-center justify-center gap-2 rounded-none bg-neutral-900 px-6 py-3 font-display text-xs font-bold uppercase tracking-wider text-white hover:bg-amber-500 hover:text-black transition-colors w-full sm:w-auto"
             >
               Get Bank Financing Quote
               <ArrowRight className="h-4 w-4" />

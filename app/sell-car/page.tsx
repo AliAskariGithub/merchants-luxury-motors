@@ -30,14 +30,11 @@ export default function SellCarPage() {
     <main className="min-h-screen bg-neutral-100 py-12 sm:py-16">
       <div className="shell">
         {/* Banner */}
-        <div className="rounded-2xl sm:rounded-3xl border border-neutral-200 bg-neutral-950 p-6 sm:p-14 text-white">
-          <span className="font-display text-xs font-bold uppercase tracking-[0.2em] text-amber-400">
-            Karachi Vehicle Purchase & Consignment
-          </span>
-          <h1 className="mt-3 font-display text-2xl font-black uppercase tracking-tight sm:text-4xl lg:text-5xl">
-            Sell or Consign Your Luxury Car
+        <div className="rounded-2xl sm:rounded-3xl border border-neutral-200 bg-neutral-950 p-6 sm:p-14 text-white text-center flex flex-col items-center">
+          <h1 className="mt-1 font-display text-2xl font-black uppercase tracking-tight sm:text-4xl lg:text-5xl">
+            Sell or Consign Your Vehicle
           </h1>
-          <p className="mt-3 sm:mt-4 max-w-2xl text-xs sm:text-base leading-relaxed text-neutral-300">
+          <p className="mt-3 sm:mt-4 max-w-2xl mx-auto text-xs sm:text-base leading-relaxed text-neutral-300">
             Get the best market price for your vehicle in Karachi. We offer instant cash buyouts with
             same-day bank transfers, or premium consignment placement on our prime Khalid Bin Waleed
             Road showroom floor.
@@ -107,14 +104,14 @@ export default function SellCarPage() {
                     href={getWhatsAppUrl(`Hi! I just requested a valuation for my ${formData.year} ${formData.make} ${formData.model} on your website. My name is ${formData.sellerName}.`)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 rounded-full bg-emerald-600 px-6 py-3 font-display text-xs font-bold uppercase text-white hover:bg-emerald-500"
+                    className="inline-flex items-center justify-center gap-2 rounded-none bg-emerald-600 px-6 py-3 font-display text-xs font-bold uppercase text-white hover:bg-emerald-500"
                   >
                     <WhatsApp className="h-4 w-4" /> Chat on WhatsApp
                   </a>
                   <button
                     type="button"
                     onClick={() => setSubmitted(false)}
-                    className="rounded-full border border-neutral-300 px-6 py-3 font-display text-xs font-bold uppercase text-neutral-700 hover:bg-neutral-100"
+                    className="rounded-none border border-neutral-300 px-6 py-3 font-display text-xs font-bold uppercase text-neutral-700 hover:bg-neutral-100"
                   >
                     Submit Another Vehicle
                   </button>
@@ -272,7 +269,7 @@ export default function SellCarPage() {
 
                 <button
                   type="submit"
-                  className="w-full rounded-2xl bg-neutral-950 py-3.5 sm:py-4 font-display text-xs font-bold uppercase tracking-wider text-white hover:bg-amber-500 hover:text-black transition-colors shadow-md"
+                  className="w-full rounded-none bg-neutral-950 py-3.5 sm:py-4 font-display text-xs font-bold uppercase tracking-wider text-white hover:bg-amber-500 hover:text-black transition-colors shadow-md"
                 >
                   Request Instant Car Valuation
                 </button>
@@ -283,10 +280,7 @@ export default function SellCarPage() {
           {/* Right Column: Why Sell to Us */}
           <div className="lg:col-span-4 space-y-4 sm:space-y-6">
             <div className="rounded-2xl sm:rounded-3xl border border-neutral-200 bg-neutral-900 p-5 sm:p-7 text-white">
-              <span className="font-display text-xs font-bold uppercase tracking-[0.2em] text-amber-400">
-                Karachi Seller Perks
-              </span>
-              <h3 className="mt-2 font-display text-lg sm:text-xl font-bold uppercase text-white">
+              <h3 className="font-display text-lg sm:text-xl font-bold uppercase text-white">
                 Why Sell to Merchants Motors?
               </h3>
 
@@ -307,10 +301,10 @@ export default function SellCarPage() {
 
               <div className="mt-5 sm:mt-6 border-t border-neutral-800 pt-4 sm:pt-5">
                 <a
-                  href={getWhatsAppUrl("Hi! I want to sell my luxury car in Karachi. Can you evaluate it for me?")}
+                  href={getWhatsAppUrl("Hi! I want to sell my car in Karachi. Can you evaluate it for me?")}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex w-full items-center justify-center gap-2 rounded-full bg-emerald-500 py-3 font-display text-xs font-bold uppercase tracking-wider text-black hover:bg-emerald-400 transition-colors"
+                  className="flex w-full items-center justify-center gap-2 rounded-none bg-emerald-500 py-3 font-display text-xs font-bold uppercase tracking-wider text-black hover:bg-emerald-400 transition-colors"
                 >
                   <WhatsApp className="h-4 w-4" /> Direct WhatsApp Appraisal
                 </a>

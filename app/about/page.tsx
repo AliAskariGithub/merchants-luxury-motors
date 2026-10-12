@@ -15,33 +15,30 @@ export default function AboutPage() {
     <main className="min-h-screen bg-neutral-100 py-12 sm:py-16">
       <div className="shell">
         {/* Hero Banner */}
-        <div className="rounded-2xl sm:rounded-3xl border border-neutral-200 bg-neutral-950 p-6 sm:p-14 text-white overflow-hidden relative">
-          <div className="relative z-10 max-w-3xl">
-            <span className="font-display text-xs font-bold uppercase tracking-[0.2em] text-amber-400">
-              About Our Dealership
-            </span>
-            <h1 className="mt-3 sm:mt-4 font-display text-2xl font-black uppercase tracking-tight sm:text-4xl lg:text-5xl">
+        <div className="rounded-2xl sm:rounded-3xl border border-neutral-200 bg-neutral-950 p-6 sm:p-14 text-white overflow-hidden relative text-center flex flex-col items-center">
+          <div className="relative z-10 max-w-3xl mx-auto">
+            <h1 className="mt-1 font-display text-2xl font-black uppercase tracking-tight sm:text-4xl lg:text-5xl">
               18+ Years of Automotive Excellence in Karachi
             </h1>
             <p className="mt-3 sm:mt-4 text-xs sm:text-base leading-relaxed text-neutral-300">
               Established in 2008 on Main Khalid Bin Waleed Road, P.E.C.H.S., Merchants Luxury Motors
-              has grown into Karachi&apos;s leading independent luxury automotive dealership,
-              specializing in top-tier Japanese imports, brand new zero-meter SUVs, and exotic grand tourers.
+              has grown into Karachi&apos;s leading automotive dealership, specializing in Pakistan&apos;s
+              most-selling sedans, family cars, Japanese imports, and premium SUVs.
             </p>
 
-            <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-3">
+            <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row justify-center gap-3">
               <a
                 href={getWhatsAppUrl("Hello! I want to inquire about visiting your Khalid Bin Waleed showroom.")}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-emerald-500 px-6 py-3 font-display text-xs font-bold uppercase tracking-wider text-black hover:bg-emerald-400 transition-colors w-full sm:w-auto"
+                className="inline-flex items-center justify-center gap-2 rounded-none bg-emerald-500 px-6 py-3 font-display text-xs font-bold uppercase tracking-wider text-black hover:bg-emerald-400 transition-colors w-full sm:w-auto"
               >
                 <WhatsApp className="h-4 w-4" />
                 Contact Sales Team
               </a>
               <Link
                 href="/inventory"
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-white/25 bg-white/10 px-6 py-3 font-display text-xs font-bold uppercase tracking-wider text-white hover:bg-white/20 transition-colors w-full sm:w-auto"
+                className="inline-flex items-center justify-center gap-2 rounded-none border border-white/25 bg-white/10 px-6 py-3 font-display text-xs font-bold uppercase tracking-wider text-white hover:bg-white/20 transition-colors w-full sm:w-auto"
               >
                 View Available Fleet
                 <ArrowRight className="h-4 w-4" />
@@ -175,7 +172,7 @@ export default function AboutPage() {
 
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-neutral-950 px-7 py-3.5 font-display text-xs font-bold uppercase tracking-wider text-white hover:bg-amber-500 hover:text-black transition-colors w-full sm:w-auto"
+              className="inline-flex items-center justify-center gap-2 rounded-none bg-neutral-950 px-7 py-3.5 font-display text-xs font-bold uppercase tracking-wider text-white hover:bg-amber-500 hover:text-black transition-colors w-full sm:w-auto"
             >
               Schedule a Visit
               <ArrowRight className="h-4 w-4" />
