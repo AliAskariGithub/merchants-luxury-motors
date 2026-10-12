@@ -115,10 +115,10 @@ export const cars: Car[] = [
       transmission: "7-Speed Super CVT-i with Sport Mode",
       engine: "1.8L 2ZR-FE 16-Valve Dual VVT-i",
     },
-    heroImage: "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?q=80&w=1200&auto=format&fit=crop",
+    heroImage: "/cars/toyota-corolla-altis-grande.jpg",
     exteriorImages: [
-      "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=1200&auto=format&fit=crop",
+      "/cars/toyota-corolla-altis-grande.jpg",
+      "/cars/toyota-corolla-altis-grande.jpg",
     ],
     interiorImages: [
       "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=1200&auto=format&fit=crop",
@@ -221,10 +221,10 @@ export const cars: Car[] = [
       transmission: "LL-CVT with Dual Paddle Shifters",
       engine: "1.5L DOHC VTEC Turbocharged 4-Cylinder",
     },
-    heroImage: "https://images.unsplash.com/photo-1606016159991-dfe4f2746ad5?q=80&w=1200&auto=format&fit=crop",
+    heroImage: "/cars/honda-civic-rs-turbo.jpg",
     exteriorImages: [
-      "https://images.unsplash.com/photo-1606016159991-dfe4f2746ad5?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1590362891991-f776e747a588?q=80&w=1200&auto=format&fit=crop",
+      "/cars/honda-civic-rs-turbo.jpg",
+      "/cars/honda-civic-rs-turbo.jpg",
     ],
     interiorImages: [
       "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1200&auto=format&fit=crop",
@@ -327,10 +327,10 @@ export const cars: Car[] = [
       transmission: "CVT with Earth Dreams Technology",
       engine: "1.5L SOHC i-VTEC 16-Valve 4-Cylinder",
     },
-    heroImage: "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?q=80&w=1200&auto=format&fit=crop",
+    heroImage: "/cars/honda-city-aspire.jpg",
     exteriorImages: [
-      "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=1200&auto=format&fit=crop",
+      "/cars/honda-city-aspire.jpg",
+      "/cars/honda-city-aspire.jpg",
     ],
     interiorImages: [
       "https://images.unsplash.com/photo-1563720223185-11003d516935?q=80&w=1200&auto=format&fit=crop",
@@ -433,10 +433,10 @@ export const cars: Car[] = [
       transmission: "5-Speed Auto Gear Shift (AGS)",
       engine: "660cc R06A DOHC 3-Cylinder VVT",
     },
-    heroImage: "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=1200&auto=format&fit=crop",
+    heroImage: "/cars/suzuki-alto-vxl.jpg",
     exteriorImages: [
-      "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=1200&auto=format&fit=crop",
+      "/cars/suzuki-alto-vxl.jpg",
+      "/cars/suzuki-alto-vxl.jpg",
     ],
     interiorImages: [
       "https://images.unsplash.com/photo-1563720223185-11003d516935?q=80&w=1200&auto=format&fit=crop",
@@ -539,10 +539,10 @@ export const cars: Car[] = [
       transmission: "7-Speed Sport Sequential Shiftmatic CVT",
       engine: "1.5L 2NR-FE Dual VVT-i 16-Valve",
     },
-    heroImage: "https://images.unsplash.com/photo-1550355291-bbee04a92027?q=80&w=1200&auto=format&fit=crop",
+    heroImage: "/cars/toyota-yaris-ativ-x.jpg",
     exteriorImages: [
-      "https://images.unsplash.com/photo-1550355291-bbee04a92027?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?q=80&w=1200&auto=format&fit=crop",
+      "/cars/toyota-yaris-ativ-x.jpg",
+      "/cars/toyota-yaris-ativ-x.jpg",
     ],
     interiorImages: [
       "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=1200&auto=format&fit=crop",
@@ -645,10 +645,10 @@ export const cars: Car[] = [
       transmission: "CVT with Sports Mode",
       engine: "1.2L K12M DOHC VVT 4-Cylinder",
     },
-    heroImage: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1200&auto=format&fit=crop",
+    heroImage: "/cars/suzuki-swift-glx.jpg",
     exteriorImages: [
-      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=1200&auto=format&fit=crop",
+      "/cars/suzuki-swift-glx.jpg",
+      "/cars/suzuki-swift-glx.jpg",
     ],
     interiorImages: [
       "https://images.unsplash.com/photo-1563720223185-11003d516935?q=80&w=1200&auto=format&fit=crop",
@@ -751,10 +751,10 @@ export const cars: Car[] = [
       transmission: "6-Speed Sportsmatic H-Matic Automatic",
       engine: "2.0L Nu MPI DOHC 16-Valve 4-Cylinder",
     },
-    heroImage: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=1200&auto=format&fit=crop",
+    heroImage: "/cars/kia-sportage-awd.jpg",
     exteriorImages: [
-      "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1506015391300-4802dc74de2e?q=80&w=1200&auto=format&fit=crop",
+      "/cars/kia-sportage-awd.jpg",
+      "/cars/kia-sportage-awd.jpg",
     ],
     interiorImages: [
       "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=1200&auto=format&fit=crop",
@@ -857,10 +857,10 @@ export const cars: Car[] = [
       transmission: "6-Speed Electronic Automatic",
       engine: "2.0L Smartstream MPI 4-Cylinder",
     },
-    heroImage: "https://images.unsplash.com/photo-1542362567-b07e54358753?q=80&w=1200&auto=format&fit=crop",
+    heroImage: "/cars/hyundai-tucson-gls.jpg",
     exteriorImages: [
-      "https://images.unsplash.com/photo-1542362567-b07e54358753?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=1200&auto=format&fit=crop",
+      "/cars/hyundai-tucson-gls.jpg",
+      "/cars/hyundai-tucson-gls.jpg",
     ],
     interiorImages: [
       "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=1200&auto=format&fit=crop",
@@ -963,10 +963,10 @@ export const cars: Car[] = [
       transmission: "5-Speed Dual-Clutch Transmission (DCT)",
       engine: "1.5L BlueCore 16-Valve DVVT",
     },
-    heroImage: "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=1200&auto=format&fit=crop",
+    heroImage: "/cars/changan-alsvin-lumiere.jpg",
     exteriorImages: [
-      "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?q=80&w=1200&auto=format&fit=crop",
+      "/cars/changan-alsvin-lumiere.jpg",
+      "/cars/changan-alsvin-lumiere.jpg",
     ],
     interiorImages: [
       "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=1200&auto=format&fit=crop",
@@ -1069,10 +1069,10 @@ export const cars: Car[] = [
       transmission: "6-Speed Super ECT Automatic with Paddle Shifters",
       engine: "2.8L 1GD-FTV D-4D Turbocharged Diesel",
     },
-    heroImage: "https://images.unsplash.com/photo-1594502184342-2e12f877aa73?q=80&w=1200&auto=format&fit=crop",
+    heroImage: "/cars/toyota-fortuner-legender.jpg",
     exteriorImages: [
-      "https://images.unsplash.com/photo-1594502184342-2e12f877aa73?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=1200&auto=format&fit=crop",
+      "/cars/toyota-fortuner-legender.jpg",
+      "/cars/toyota-fortuner-legender.jpg",
     ],
     interiorImages: [
       "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=1200&auto=format&fit=crop",
@@ -1140,6 +1140,112 @@ export const cars: Car[] = [
       {
         heading: "Brand New Zero-Meter Showroom Unit",
         body: "Physically parked inside our Khalid Bin Waleed Road showroom. Avoid dealership waiting queues; complete Indus Motor warranty book in hand with on-spot biometric ownership transfer.",
+      },
+    ],
+  },
+  {
+    slug: "mercedes-benz-c200-amg",
+    name: "Mercedes-Benz C-Class C200 AMG Line 2024",
+    shortName: "Mercedes C200 AMG",
+    brand: "Mercedes-Benz",
+    year: 2024,
+    category: "Luxury Sedan",
+    tagline: "The Definitive German Luxury Executive Sedan on Khalid Bin Waleed Road.",
+    condition: "Brand New / Zero Meter",
+    registration: "Unregistered (Direct Import with Full Custom Duties Paid)",
+    mileage: "Zero Meter",
+    cplcStatus: "100% Cleared & Verified",
+    auctionGrade: "Shahnawaz Certified / Grade 5A Japan Auction Verified",
+    pricePkr: 38500000,
+    priceFormatted: "₨ 3.85 Crore",
+    basePrice: 38500000,
+    summary:
+      "The 2024 Mercedes-Benz C200 AMG Line represents peak executive automotive luxury in Karachi. Powered by a 1.5L turbocharged engine with 48V EQ Boost mild hybrid technology, 9G-TRONIC transmission, starry diamond grille, panoramic glass roof, 64-color ambient lighting, and high-definition MBUX central display.",
+    specs: {
+      power: "201 hp + 20 hp EQ Boost @ 5,800 rpm",
+      torque: "300 Nm @ 1,800–4,000 rpm",
+      range: "820 km (66L Fuel Tank)",
+      sprint: "7.3 s (0–100 km/h)",
+      charge: "48V Lithium-Ion Mild Hybrid Battery System",
+      drivetrain: "Rear-Wheel Drive (RWD)",
+      topSpeed: "246 km/h",
+      seats: 5,
+      weight: "1,650 kg",
+      fuelEconomy: "13.0–16.5 km/L",
+      transmission: "9G-TRONIC 9-Speed Automatic with Paddle Shifters",
+      engine: "1.5L M254 Turbocharged 4-Cylinder with 48V Mild Hybrid",
+    },
+    heroImage: "/cars/mercedes-benz-c200-amg.jpg",
+    exteriorImages: [
+      "/cars/mercedes-benz-c200-amg.jpg",
+      "/cars/mercedes-benz-c200-amg.jpg",
+    ],
+    interiorImages: [
+      "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1563720223185-11003d516935?q=80&w=1200&auto=format&fit=crop",
+    ],
+    videoUrl: "https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ",
+    keyFeatures: [
+      {
+        category: "AMG Powertrain & Dynamics",
+        items: [
+          "1.5L Turbocharged M254 Engine with 48V EQ Boost (201 hp + 20 hp)",
+          "9G-TRONIC 9-Speed Automatic Transmission with Direct Select Paddles",
+          "DYNAMIC SELECT Driving Modes (Eco, Comfort, Sport, Individual)",
+          "Agility Control Suspension with Selective Damping System",
+        ],
+      },
+      {
+        category: "AMG Line Styling & Cockpit",
+        items: [
+          "Starry Diamond Radiator Grille with Chrome Pins and Central Star",
+          "19-inch AMG Multi-Spoke Bicolor Alloy Wheels",
+          "11.9-inch MBUX Portrait Central Touchscreen with Fingerprint Scanner",
+          "64-Color Ambient Lighting with Illuminated AMG Door Sill Panels",
+        ],
+      },
+      {
+        category: "Safety & Driver Assistance",
+        items: [
+          "Active Brake Assist & Blind Spot Assist with Exit Warning",
+          "360-Degree Surround View Cameras with Active Parking Assist PARKTRONIC",
+          "PRE-SAFE® Predictive Occupant Protection System & 7 Airbags",
+          "DIGITAL LIGHT High-Resolution Headlamps with Adaptive Highbeam",
+        ],
+      },
+    ],
+    paints: [
+      { id: "c200-obsidian-black", name: "Obsidian Black Metallic", hex: "#0B0B0B", price: 0 },
+      { id: "c200-polar-white", name: "Polar White Solid", hex: "#FFFFFF", price: 0 },
+      { id: "c200-selenite-grey", name: "Selenite Grey Metallic", hex: "#4B4E53", price: 185000 },
+      { id: "c200-spectral-blue", name: "Spectral Blue Metallic", hex: "#1C355E", price: 220000 },
+      { id: "c200-high-tech-silver", name: "High-Tech Silver Metallic", hex: "#B8B9BB", price: 185000 },
+      { id: "c200-opalite-white", name: "MANUFAKTUR Opalite White Bright", hex: "#F2F2F2", price: 395000 },
+    ],
+    wheels: [
+      { id: "wheel-19-amg-multispoke", name: "19\" AMG Multi-Spoke Bicolor Alloys", size: 19, style: "sport", hex: "#222222", price: 0 },
+      { id: "wheel-19-amg-5spoke", name: "19\" AMG 5-Twin-Spoke Aerodynamic Rims", size: 19, style: "luxury", hex: "#404040", price: 195000 },
+      { id: "wheel-20-amg-forged", name: "20\" AMG Night Package Matte Black Forged", size: 20, style: "track", hex: "#121212", price: 345000 },
+    ],
+    interiors: [
+      { id: "int-c200-sienna-brown", name: "Sienna Brown & Black Exclusive Leather", material: "Artico Man-Made Leather", trimHex: "#8A4B29", accentHex: "#121212", price: 0 },
+      { id: "int-c200-black-amg", name: "All-Black AMG Stitched Leather", material: "Fine Perforated Leather", trimHex: "#141414", accentHex: "#A0A0A0", price: 120000 },
+      { id: "int-c200-macchiato-beige", name: "Macchiato Beige / Black Dual-Tone", material: "Napa Leather", trimHex: "#D8C7B0", accentHex: "#141414", price: 175000 },
+      { id: "int-c200-power-red", name: "Cranberry Power Red / Black Two-Tone", material: "Designo Exclusive Hide", trimHex: "#8B1E28", accentHex: "#121212", price: 240000 },
+    ],
+    packs: [
+      { id: "c200-burmester-pack", name: "Burmester® 3D Surround Sound Suite", blurb: "15 high-performance speakers, DSP amplifier with 710 watts of crystal-clear sound.", price: 320000 },
+      { id: "c200-night-pack", name: "AMG Night Package Exterior Gloss Black Trim", blurb: "High-gloss black mirrors, beltline trim, dark-tinted rear glass, and black chrome exhausts.", price: 210000 },
+      { id: "c200-pakistan-ceramic", name: "Karachi Coastal 9H Ceramic Armor & PPF", blurb: "Complete front-end TPU self-healing PPF wrap with 5-year anti-corrosion guarantee.", price: 285000 },
+    ],
+    story: [
+      {
+        heading: "The Supreme Benchmark of Luxury on Khalid Bin Waleed Road",
+        body: "Imported brand new with all duties cleared, the Mercedes-Benz C200 AMG Line commands elite prestige in Karachi. Featuring the latest W206 architecture inspired by the flagship S-Class, it provides unmatched refinement and executive status.",
+      },
+      {
+        heading: "Immediate Showroom Floor Availability",
+        body: "Parked on the first floor display gallery of Merchants Luxury Motors. Full verifiable customs clearance documentation, biometric transfer ready, and Shahnawaz warranty backup.",
       },
     ],
   },
