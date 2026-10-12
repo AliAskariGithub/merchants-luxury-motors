@@ -34,19 +34,22 @@ export default function Models() {
     ready: false,
   });
 
-  // Calculate sliding active indicator position
+  // Calculate sliding active indicator position cleanly
   useEffect(() => {
-    const el = tabRefs.current.get(activeCategory);
-    const container = containerRef.current;
-    if (el && container) {
-      const containerRect = container.getBoundingClientRect();
-      const elRect = el.getBoundingClientRect();
-      setIndicator({
-        left: elRect.left - containerRect.left,
-        width: elRect.width,
-        ready: true,
-      });
-    }
+    const updateIndicator = () => {
+      const el = tabRefs.current.get(activeCategory);
+      if (el) {
+        setIndicator({
+          left: el.offsetLeft,
+          width: el.offsetWidth,
+          ready: true,
+        });
+      }
+    };
+
+    updateIndicator();
+    window.addEventListener("resize", updateIndicator);
+    return () => window.removeEventListener("resize", updateIndicator);
   }, [activeCategory]);
 
   const filteredCars = cars.filter((car) => {
@@ -69,18 +72,18 @@ export default function Models() {
           />
         </div>
 
-        {/* Enhanced Category Filter Tabs with smooth sliding active indicator */}
-        <div className="mt-8 sm:mt-10 flex items-center justify-center">
+        {/* Enhanced Category Filter Tabs with smooth sliding active indicator (no scrollbar) */}
+        <div className="mt-8 sm:mt-10 flex items-center justify-center overflow-x-auto no-scrollbar [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden px-2 max-w-full">
           <div
             ref={containerRef}
-            className="relative inline-flex p-1 bg-neutral-100 border border-neutral-300 shadow-sm rounded-none gap-1 sm:gap-1.5 overflow-x-auto no-scrollbar max-w-full"
+            className="relative inline-flex p-1 bg-neutral-100 border border-neutral-300 shadow-sm rounded-none gap-1 sm:gap-1.5 shrink-0 select-none"
           >
             {/* Smooth sliding pill indicator moving left to right according to click */}
             {indicator.ready && (
               <div
                 className="absolute top-1 bottom-1 bg-neutral-950 shadow-md transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] rounded-none pointer-events-none"
                 style={{
-                  transform: `translateX(${indicator.left}px)`,
+                  left: `${indicator.left}px`,
                   width: `${indicator.width}px`,
                 }}
               />
