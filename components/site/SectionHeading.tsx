@@ -23,11 +23,11 @@ export default function SectionHeading({
 
   return (
     <div
-      className={`${centered ? "mx-auto max-w-2xl text-center flex flex-col items-center" : "max-w-2xl"} ${className}`}
+      className={`${centered ? "mx-auto max-w-3xl lg:max-w-4xl text-center flex flex-col items-center" : "max-w-3xl"} ${className}`}
     >
       <Reveal delay={80}>
         <h2
-          className={`font-display text-[clamp(1.9rem,4.2vw,3.1rem)] font-extrabold leading-[1.02] tracking-tight ${
+          className={`font-display text-[clamp(1.75rem,3.5vw,2.75rem)] font-extrabold leading-[1.15] tracking-tight text-balance ${
             isDark ? "text-ink-900" : "text-white"
           } ${centered ? "text-center" : ""}`}
         >
@@ -37,8 +37,8 @@ export default function SectionHeading({
       {description ? (
         <Reveal delay={140}>
           <p
-            className={`mt-4 sm:mt-5 text-sm sm:text-base leading-relaxed ${
-              isDark ? "text-ink-500" : "text-ink-300"
+            className={`mt-3.5 sm:mt-4 text-sm sm:text-base leading-relaxed max-w-2xl text-pretty ${
+              isDark ? "text-neutral-600" : "text-neutral-300"
             } ${centered ? "text-center" : ""}`}
           >
             {description}
