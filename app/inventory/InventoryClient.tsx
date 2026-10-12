@@ -16,8 +16,8 @@ import {
   Close,
 } from "@/components/ui/Icons";
 
-const BRANDS = ["All", "Toyota", "Honda", "Suzuki", "Kia", "Hyundai", "Changan"];
-const CATEGORIES = ["All", "Executive Sedan", "Sport Sedan", "Compact Sedan", "Economy Hatchback", "Hot Hatchback", "Compact SUV", "Crossover SUV", "Luxury SUV"];
+const BRANDS = ["All", "Toyota", "Honda", "Suzuki", "Mercedes-Benz", "Kia", "Hyundai", "Changan"];
+const CATEGORIES = ["All", "Executive Sedan", "Sport Sedan", "Luxury Sedan", "Compact Sedan", "Economy Hatchback", "Hot Hatchback", "Compact SUV", "Crossover SUV", "Luxury SUV"];
 const FUELS = ["All", "Petrol", "Diesel", "Hybrid"];
 
 function InventoryContent() {
