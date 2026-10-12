@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { cars } from "@/lib/cars";
@@ -26,6 +26,28 @@ function cleanCardSpec(value: string): string {
 
 export default function Models() {
   const [activeCategory, setActiveCategory] = useState("all");
+  const containerRef = useRef<HTMLDivElement>(null);
+  const tabRefs = useRef<Map<string, HTMLButtonElement>>(new Map());
+  const [indicator, setIndicator] = useState<{ left: number; width: number; ready: boolean }>({
+    left: 0,
+    width: 0,
+    ready: false,
+  });
+
+  // Calculate sliding active indicator position
+  useEffect(() => {
+    const el = tabRefs.current.get(activeCategory);
+    const container = containerRef.current;
+    if (el && container) {
+      const containerRect = container.getBoundingClientRect();
+      const elRect = el.getBoundingClientRect();
+      setIndicator({
+        left: elRect.left - containerRect.left,
+        width: elRect.width,
+        ready: true,
+      });
+    }
+  }, [activeCategory]);
 
   const filteredCars = cars.filter((car) => {
     if (activeCategory === "all") return true;
@@ -36,7 +58,7 @@ export default function Models() {
   });
 
   return (
-    <section id="inventory" className="scroll-mt-24 bg-neutral-50 py-20 sm:py-24 lg:py-28">
+    <section id="inventory" className="scroll-mt-24 bg-neutral-50 py-20 sm:py-24 lg:py-28 border-b border-neutral-200">
       <div className="shell">
         {/* Centered Section Header */}
         <div className="flex flex-col items-center text-center">
@@ -47,9 +69,23 @@ export default function Models() {
           />
         </div>
 
-        {/* Enhanced Category Filter Tabs with sharp corners and count badges */}
+        {/* Enhanced Category Filter Tabs with smooth sliding active indicator */}
         <div className="mt-8 sm:mt-10 flex items-center justify-center">
-          <div className="inline-flex p-1 bg-neutral-100 border border-neutral-300 shadow-sm rounded-none gap-1 sm:gap-1.5 overflow-x-auto no-scrollbar max-w-full">
+          <div
+            ref={containerRef}
+            className="relative inline-flex p-1 bg-neutral-100 border border-neutral-300 shadow-sm rounded-none gap-1 sm:gap-1.5 overflow-x-auto no-scrollbar max-w-full"
+          >
+            {/* Smooth sliding pill indicator moving left to right according to click */}
+            {indicator.ready && (
+              <div
+                className="absolute top-1 bottom-1 bg-neutral-950 shadow-md transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] rounded-none pointer-events-none"
+                style={{
+                  transform: `translateX(${indicator.left}px)`,
+                  width: `${indicator.width}px`,
+                }}
+              />
+            )}
+
             {CATEGORIES.map((tab) => {
               const count = cars.filter((c) => {
                 if (tab.id === "all") return true;
@@ -63,17 +99,21 @@ export default function Models() {
               return (
                 <button
                   key={tab.id}
+                  ref={(node) => {
+                    if (node) tabRefs.current.set(tab.id, node);
+                    else tabRefs.current.delete(tab.id);
+                  }}
                   type="button"
                   onClick={() => setActiveCategory(tab.id)}
-                  className={`group relative shrink-0 flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 font-display text-[0.7rem] sm:text-xs font-bold uppercase tracking-wider transition-all duration-200 rounded-none ${
+                  className={`group relative z-10 shrink-0 flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 font-display text-[0.7rem] sm:text-xs font-bold uppercase tracking-wider transition-colors duration-200 rounded-none ${
                     isActive
-                      ? "bg-neutral-950 text-white shadow-md"
-                      : "text-neutral-600 hover:text-neutral-950 hover:bg-white"
+                      ? "text-white"
+                      : "text-neutral-600 hover:text-neutral-950"
                   }`}
                 >
                   <span>{tab.label}</span>
                   <span
-                    className={`inline-flex items-center justify-center px-1.5 py-0.5 text-[0.625rem] font-bold rounded-none ${
+                    className={`inline-flex items-center justify-center px-1.5 py-0.5 text-[0.625rem] font-bold rounded-none transition-colors duration-200 ${
                       isActive
                         ? "bg-amber-400 text-neutral-950"
                         : "bg-neutral-200 text-neutral-700 group-hover:bg-neutral-300"

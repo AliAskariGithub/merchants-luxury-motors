@@ -6,41 +6,25 @@ import { ShieldCheck, Check, ArrowRight, WhatsApp, Pin } from "../ui/Icons";
 
 export default function ShowroomGuarantees() {
   return (
-    <section id="services" className="scroll-mt-24 bg-white py-20 sm:py-24 lg:py-28">
+    <section id="services" className="scroll-mt-24 bg-white py-20 sm:py-24 lg:py-28 border-b border-neutral-200">
       <div className="shell">
-        {/* Centered Section Header */}
-        <div className="flex flex-col items-center text-center gap-6">
+        {/* Centered Section Header without button */}
+        <div className="flex flex-col items-center text-center">
           <SectionHeading
             align="center"
-            title={
-              <>
-                Flawless Documentation.
-                <br />
-                Uncompromising Trust.
-              </>
-            }
+            title="Flawless Documentation, Uncompromising Trust"
             description="Purchasing a vehicle in Karachi requires complete certainty regarding customs duties, CPLC records, and Sindh Excise ownership. We guarantee 100% legal transparency on every vehicle in our showroom."
           />
-
-          <Reveal delay={120}>
-            <Link
-              href="/services"
-              className="inline-flex items-center gap-2 rounded-none border border-neutral-300 bg-neutral-900 px-6 py-3 font-display text-xs font-bold uppercase tracking-wider text-white transition-all hover:bg-amber-500 hover:text-black"
-            >
-              All Showroom Services
-              <ArrowRight className="h-4 w-4" />
-            </Link>
-          </Reveal>
         </div>
 
         {/* 4 Guarantees Cards */}
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 sm:mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {KARACHI_SHOWROOM.guarantees.map((item, index) => (
             <Reveal key={item.title} delay={index * 80} className="flex">
-              <div className="flex h-full w-full flex-col justify-between rounded-3xl border border-neutral-200 bg-neutral-50/70 p-7 transition-all duration-300 hover:border-amber-400 hover:bg-white hover:shadow-xl">
+              <div className="flex h-full w-full flex-col justify-between rounded-none border border-neutral-200 bg-neutral-50/70 p-7 transition-all duration-300 hover:border-amber-400 hover:bg-white hover:shadow-xl">
                 <div>
                   <div className="flex items-center justify-between">
-                    <span className="grid h-12 w-12 place-items-center rounded-2xl bg-amber-500/15 text-amber-600">
+                    <span className="grid h-12 w-12 place-items-center rounded-none bg-amber-500/15 text-amber-600">
                       <ShieldCheck className="h-6 w-6" />
                     </span>
                     <span className="rounded-none bg-emerald-100 px-3 py-1 font-display text-[0.625rem] font-bold uppercase tracking-wider text-emerald-800">
@@ -66,8 +50,21 @@ export default function ShowroomGuarantees() {
           ))}
         </div>
 
+        {/* All Showroom Services Button moved below the cards */}
+        <div className="mt-10 sm:mt-12 flex justify-center">
+          <Reveal delay={120}>
+            <Link
+              href="/services"
+              className="inline-flex items-center gap-2.5 rounded-none border-2 border-neutral-900 bg-neutral-900 px-8 py-3.5 font-display text-xs sm:text-sm font-bold uppercase tracking-wider text-white shadow-md transition-all hover:bg-amber-500 hover:border-amber-500 hover:text-black hover:-translate-y-0.5"
+            >
+              All Showroom Services
+              <ArrowRight className="h-4 w-4" />
+            </Link>
+          </Reveal>
+        </div>
+
         {/* Showroom Visit & Nationwide Delivery Assurance */}
-        <div className="mt-12 rounded-3xl border border-neutral-800 bg-gradient-to-r from-neutral-900 via-neutral-900 to-black p-8 text-white sm:p-10 shadow-lg">
+        <div className="mt-14 rounded-none border border-neutral-800 bg-gradient-to-r from-neutral-900 via-neutral-900 to-black p-8 text-white sm:p-10 shadow-lg">
           <div className="grid gap-6 lg:grid-cols-3 lg:items-center">
             <div className="lg:col-span-2">
               <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-amber-400">

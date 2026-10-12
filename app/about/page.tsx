@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { KARACHI_SHOWROOM, getWhatsAppUrl } from "@/lib/showroom";
 import { ShieldCheck, Check, WhatsApp, Phone, Pin, ArrowRight } from "@/components/ui/Icons";
+import AnimatedCounter from "@/components/ui/AnimatedCounter";
 
 export const metadata: Metadata = {
   title: "About Showroom | Merchants Luxury Motors Karachi",
@@ -52,10 +53,10 @@ export default function AboutPage() {
           {KARACHI_SHOWROOM.metrics.map((m) => (
             <div
               key={m.label}
-              className="rounded-2xl sm:rounded-3xl border border-neutral-200 bg-white p-3.5 sm:p-6 text-center shadow-sm"
+              className="rounded-none border border-neutral-200 bg-white p-3.5 sm:p-6 text-center shadow-sm"
             >
               <span className="font-display text-xl sm:text-3xl lg:text-4xl font-black text-amber-600 truncate block">
-                {m.value}
+                <AnimatedCounter value={m.value} />
               </span>
               <p className="mt-1 font-display text-[0.625rem] sm:text-xs font-bold uppercase tracking-wider text-neutral-500">
                 {m.label}

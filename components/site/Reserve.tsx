@@ -51,10 +51,10 @@ function BookingFormContent() {
   return (
     <div className="grid gap-12 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:items-start">
       {/* Form or Confirmation */}
-      <div className="rounded-2xl sm:rounded-3xl border border-neutral-200 bg-white p-4 sm:p-10 shadow-lg">
+      <div className="rounded-none border border-neutral-200 bg-white p-4 sm:p-10 shadow-lg">
         {submitted ? (
           <div className="py-6 sm:py-8 text-center">
-            <div className="mx-auto grid h-14 w-14 sm:h-16 sm:w-16 place-items-center rounded-full bg-emerald-100 text-emerald-600">
+            <div className="mx-auto grid h-14 w-14 sm:h-16 sm:w-16 place-items-center rounded-none bg-emerald-100 text-emerald-600">
               <Check className="h-7 w-7 sm:h-8 sm:w-8" />
             </div>
 
@@ -116,7 +116,7 @@ function BookingFormContent() {
                   placeholder="e.g. Tariq Mansoor"
                   value={fields.fullName}
                   onChange={(e) => setFields({ ...fields, fullName: e.target.value })}
-                  className="mt-1.5 w-full rounded-xl border border-neutral-200 bg-neutral-50 px-4 py-3 text-base sm:text-sm focus:border-amber-500 focus:outline-none"
+                  className="mt-1.5 w-full rounded-none border border-neutral-200 bg-neutral-50 px-4 py-3 text-base sm:text-sm focus:border-amber-500 focus:outline-none"
                 />
               </div>
 
@@ -130,7 +130,7 @@ function BookingFormContent() {
                   placeholder="0300-1234567"
                   value={fields.phone}
                   onChange={(e) => setFields({ ...fields, phone: e.target.value })}
-                  className="mt-1.5 w-full rounded-xl border border-neutral-200 bg-neutral-50 px-4 py-3 text-base sm:text-sm focus:border-amber-500 focus:outline-none"
+                  className="mt-1.5 w-full rounded-none border border-neutral-200 bg-neutral-50 px-4 py-3 text-base sm:text-sm focus:border-amber-500 focus:outline-none"
                 />
               </div>
             </div>
@@ -143,7 +143,7 @@ function BookingFormContent() {
                 <select
                   value={fields.selectedCar}
                   onChange={(e) => setFields({ ...fields, selectedCar: e.target.value })}
-                  className="mt-1.5 w-full rounded-xl border border-neutral-200 bg-neutral-50 px-4 py-3 text-base sm:text-sm focus:border-amber-500 focus:outline-none"
+                  className="mt-1.5 w-full rounded-none border border-neutral-200 bg-neutral-50 px-4 py-3 text-base sm:text-sm focus:border-amber-500 focus:outline-none"
                 >
                   {cars.map((car) => (
                     <option key={car.slug} value={car.slug}>
@@ -160,7 +160,7 @@ function BookingFormContent() {
                 <select
                   value={fields.cityArea}
                   onChange={(e) => setFields({ ...fields, cityArea: e.target.value })}
-                  className="mt-1.5 w-full rounded-xl border border-neutral-200 bg-neutral-50 px-4 py-3 text-base sm:text-sm focus:border-amber-500 focus:outline-none"
+                  className="mt-1.5 w-full rounded-none border border-neutral-200 bg-neutral-50 px-4 py-3 text-base sm:text-sm focus:border-amber-500 focus:outline-none"
                 >
                   <option value="DHA / Clifton, Karachi">DHA / Clifton, Karachi</option>
                   <option value="PECHS / Tariq Road, Karachi">PECHS / Tariq Road, Karachi</option>
@@ -181,7 +181,7 @@ function BookingFormContent() {
                   type="date"
                   value={fields.visitDate}
                   onChange={(e) => setFields({ ...fields, visitDate: e.target.value })}
-                  className="mt-1.5 w-full rounded-xl border border-neutral-200 bg-neutral-50 px-4 py-3 text-base sm:text-sm focus:border-amber-500 focus:outline-none"
+                  className="mt-1.5 w-full rounded-none border border-neutral-200 bg-neutral-50 px-4 py-3 text-base sm:text-sm focus:border-amber-500 focus:outline-none"
                 />
               </div>
 
@@ -192,7 +192,7 @@ function BookingFormContent() {
                 <select
                   value={fields.visitTime}
                   onChange={(e) => setFields({ ...fields, visitTime: e.target.value })}
-                  className="mt-1.5 w-full rounded-xl border border-neutral-200 bg-neutral-50 px-4 py-3 text-base sm:text-sm focus:border-amber-500 focus:outline-none"
+                  className="mt-1.5 w-full rounded-none border border-neutral-200 bg-neutral-50 px-4 py-3 text-base sm:text-sm focus:border-amber-500 focus:outline-none"
                 >
                   <option value="Morning (11:00 AM – 1:00 PM)">Morning (11:00 AM – 1:00 PM)</option>
                   <option value="Afternoon (2:30 PM – 5:30 PM)">Afternoon (2:30 PM – 5:30 PM)</option>
@@ -210,7 +210,7 @@ function BookingFormContent() {
                 placeholder="e.g. Inquire about trade-in of my current car or Bank Alfalah financing..."
                 value={fields.notes}
                 onChange={(e) => setFields({ ...fields, notes: e.target.value })}
-                className="mt-1.5 w-full rounded-xl border border-neutral-200 bg-neutral-50 px-4 py-3 text-base sm:text-sm focus:border-amber-500 focus:outline-none"
+                className="mt-1.5 w-full rounded-none border border-neutral-200 bg-neutral-50 px-4 py-3 text-base sm:text-sm focus:border-amber-500 focus:outline-none"
               />
             </div>
 
@@ -226,7 +226,7 @@ function BookingFormContent() {
 
       {/* Showroom Details & Direct Contact Card */}
       <div className="space-y-4 sm:space-y-6">
-        <div className="rounded-2xl sm:rounded-3xl border border-neutral-200 bg-neutral-900 p-5 sm:p-8 text-white">
+        <div className="rounded-none border border-neutral-200 bg-neutral-900 p-5 sm:p-8 text-white">
           <h3 className="font-display text-lg sm:text-xl font-bold uppercase text-white">
             {KARACHI_SHOWROOM.name}
           </h3>
@@ -263,7 +263,7 @@ function BookingFormContent() {
             </div>
           </div>
 
-          <div className="mt-6 rounded-2xl bg-white/10 p-4 text-xs">
+          <div className="mt-6 rounded-none bg-white/10 p-4 text-xs">
             <div className="font-bold text-amber-300">Operating Hours:</div>
             <div className="mt-1 text-neutral-200">{KARACHI_SHOWROOM.timings.weekdays}</div>
             <div className="text-neutral-400">{KARACHI_SHOWROOM.timings.fridayBreak}</div>
@@ -284,7 +284,7 @@ function BookingFormContent() {
         </div>
 
         {/* CPLC Assurance Banner */}
-        <div className="rounded-3xl border border-emerald-500/30 bg-emerald-950/20 p-6 text-neutral-800">
+        <div className="rounded-none border border-emerald-500/30 bg-emerald-950/20 p-6 text-neutral-800">
           <div className="flex items-center gap-3 text-emerald-800">
             <ShieldCheck className="h-6 w-6 shrink-0 text-emerald-600" />
             <h4 className="font-display text-sm font-bold uppercase">
@@ -303,7 +303,7 @@ function BookingFormContent() {
 
 export default function Reserve() {
   return (
-    <section id="reserve" className="scroll-mt-24 bg-neutral-100 py-20 sm:py-24 lg:py-28">
+    <section id="reserve" className="scroll-mt-24 bg-white py-20 sm:py-24 lg:py-28 border-t border-neutral-200">
       <div className="shell">
         <Reveal>
           <div className="mx-auto max-w-3xl text-center mb-14">

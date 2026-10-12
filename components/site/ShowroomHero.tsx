@@ -11,6 +11,7 @@ import {
   Close,
   WhatsApp,
 } from "../ui/Icons";
+import AnimatedCounter from "../ui/AnimatedCounter";
 
 export default function ShowroomHero() {
   const [showTourModal, setShowTourModal] = useState(false);
@@ -196,11 +197,11 @@ export default function ShowroomHero() {
       {/* Showroom Credentials Bar - MOVED DOWN BELOW THE HERO SECTION */}
       <section className="relative z-20 border-y border-white/10 bg-neutral-950 py-6 sm:py-8 text-white shadow-lg">
         <div className="shell">
-          <dl className="grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur sm:grid-cols-4">
+          <dl className="grid grid-cols-2 gap-px overflow-hidden rounded-none border border-white/10 bg-white/5 backdrop-blur sm:grid-cols-4">
             {KARACHI_SHOWROOM.metrics.map((stat) => (
               <div key={stat.label} className="px-2.5 py-3.5 sm:px-6 sm:py-5 text-center">
                 <dd className="font-display text-xl font-black tracking-tight text-white sm:text-3xl">
-                  {stat.value}
+                  <AnimatedCounter value={stat.value} />
                 </dd>
                 <dt className="mt-1 font-display text-[0.62rem] sm:text-[0.68rem] font-bold uppercase tracking-[0.14em] text-neutral-400">
                   {stat.label}
