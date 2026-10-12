@@ -100,7 +100,7 @@ function InventoryContent() {
       </div>
 
       {/* Filter and Control Bar */}
-      <div className="mb-8 rounded-2xl sm:rounded-3xl border border-neutral-200 bg-white p-4 sm:p-6 shadow-sm">
+      <div className="mb-8 rounded-none border border-neutral-200 bg-white p-4 sm:p-6 shadow-sm">
         {/* Search and Brand Bar */}
         <div className="grid gap-3 sm:gap-4 sm:grid-cols-2 lg:grid-cols-12 lg:items-center">
           <div className="relative sm:col-span-2 lg:col-span-5">
@@ -230,7 +230,7 @@ function InventoryContent() {
 
       {/* Vehicles Display */}
       {filteredCars.length === 0 ? (
-        <div className="rounded-3xl border border-neutral-200 bg-white p-16 text-center shadow-sm">
+        <div className="rounded-none border border-neutral-200 bg-white p-16 text-center shadow-sm">
           <h3 className="font-display text-xl font-bold uppercase text-neutral-900">
             No Vehicles Match Your Current Filters
           </h3>
@@ -260,7 +260,7 @@ function InventoryContent() {
           {filteredCars.map((car) => (
             <div
               key={car.slug}
-              className="group flex flex-col overflow-hidden rounded-[26px] border border-neutral-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+              className="group flex flex-col overflow-hidden rounded-none border border-neutral-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
             >
               {/* Image & Badges */}
               <div className="relative aspect-[16/10] w-full overflow-hidden bg-neutral-950">
@@ -354,7 +354,7 @@ function InventoryContent() {
           {filteredCars.map((car) => (
             <div
               key={car.slug}
-              className="group flex flex-col sm:flex-row overflow-hidden rounded-2xl sm:rounded-3xl border border-neutral-200 bg-white shadow-sm transition-all hover:shadow-lg"
+              className="group flex flex-col sm:flex-row overflow-hidden rounded-none border border-neutral-200 bg-white shadow-sm transition-all hover:shadow-lg"
             >
               <div className="relative aspect-[16/10] sm:w-72 shrink-0 bg-neutral-950">
                 <Image

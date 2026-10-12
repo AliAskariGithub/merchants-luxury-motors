@@ -123,7 +123,7 @@ export default function CarDetailClient({
         {/* Left Column: Media Suite & Specs (8 Cols) */}
         <div className="space-y-8 lg:col-span-8">
           {/* Media Suite Card */}
-          <div className="overflow-hidden rounded-2xl sm:rounded-3xl border border-neutral-200 bg-white p-3.5 sm:p-6 shadow-sm">
+          <div className="overflow-hidden rounded-none border border-neutral-200 bg-white p-3.5 sm:p-6 shadow-sm">
             {/* Media Tabs Switcher */}
             <div className="mb-4 flex items-center justify-between gap-2 border-b border-neutral-100 pb-3">
               <div className="flex items-center gap-1.5 sm:gap-2 overflow-x-auto no-scrollbar pb-1 sm:pb-0 w-full sm:w-auto">
@@ -184,7 +184,7 @@ export default function CarDetailClient({
 
             {/* Media Viewer Area */}
             {activeMediaTab === "video" ? (
-              <div className="relative aspect-video w-full overflow-hidden rounded-2xl bg-black shadow-inner">
+              <div className="relative aspect-video w-full overflow-hidden rounded-none bg-black shadow-inner">
                 <video
                   src={car.videoUrl}
                   controls
@@ -196,7 +196,7 @@ export default function CarDetailClient({
               <div className="space-y-3">
                 <div
                   onClick={() => setLightboxOpen(true)}
-                  className="group relative aspect-[16/10] w-full cursor-zoom-in overflow-hidden rounded-2xl bg-neutral-950 shadow-inner"
+                  className="group relative aspect-[16/10] w-full cursor-zoom-in overflow-hidden rounded-none bg-neutral-950 shadow-inner"
                 >
                   <Image
                     src={currentImage}
@@ -206,7 +206,7 @@ export default function CarDetailClient({
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                  <span className="absolute bottom-4 right-4 rounded-full bg-black/75 px-3 py-1.5 text-xs font-bold uppercase text-white backdrop-blur">
+                  <span className="absolute bottom-4 right-4 rounded-none bg-black/75 px-3 py-1.5 text-xs font-bold uppercase text-white backdrop-blur">
                     Click to Enlarge
                   </span>
                 </div>
@@ -218,7 +218,7 @@ export default function CarDetailClient({
                       key={i}
                       type="button"
                       onClick={() => setSelectedImageIndex(i)}
-                      className={`relative h-16 w-24 sm:h-20 sm:w-32 shrink-0 overflow-hidden rounded-xl border-2 transition-all ${
+                      className={`relative h-16 w-24 sm:h-20 sm:w-32 shrink-0 overflow-hidden rounded-none border-2 transition-all ${
                         selectedImageIndex === i
                           ? "border-amber-500 shadow-md scale-95"
                           : "border-transparent opacity-70 hover:opacity-100"
@@ -239,7 +239,7 @@ export default function CarDetailClient({
           </div>
 
           {/* Pakistani Documentation & Verification Panel */}
-          <div className="rounded-2xl sm:rounded-3xl border border-emerald-500/30 bg-emerald-950/10 p-4 sm:p-8">
+          <div className="rounded-none border border-emerald-500/30 bg-emerald-950/10 p-4 sm:p-8">
             <div className="flex items-center gap-2 sm:gap-2.5 text-emerald-800">
               <ShieldCheck className="h-5 w-5 sm:h-6 sm:w-6 shrink-0 text-emerald-600" />
               <h2 className="font-display text-base sm:text-lg font-bold uppercase tracking-tight">
@@ -248,25 +248,25 @@ export default function CarDetailClient({
             </div>
 
             <dl className="mt-5 sm:mt-6 grid grid-cols-2 gap-2 sm:gap-4 lg:grid-cols-4 text-xs">
-              <div className="rounded-xl sm:rounded-2xl bg-white p-2.5 sm:p-4 border border-emerald-100 min-w-0">
+              <div className="rounded-none bg-white p-2.5 sm:p-4 border border-emerald-100 min-w-0">
                 <dt className="font-bold uppercase tracking-wider text-neutral-400 text-[0.625rem] sm:text-xs truncate">CPLC Clearance</dt>
                 <dd className="mt-1 font-bold text-emerald-700 text-xs sm:text-sm truncate">{car.cplcStatus}</dd>
                 <p className="mt-0.5 text-[0.625rem] sm:text-[0.6875rem] text-neutral-500 truncate">Physical certificate verified</p>
               </div>
 
-              <div className="rounded-xl sm:rounded-2xl bg-white p-2.5 sm:p-4 border border-emerald-100 min-w-0">
+              <div className="rounded-none bg-white p-2.5 sm:p-4 border border-emerald-100 min-w-0">
                 <dt className="font-bold uppercase tracking-wider text-neutral-400 text-[0.625rem] sm:text-xs truncate">Sindh Excise Biometric</dt>
                 <dd className="mt-1 font-bold text-neutral-900 text-xs sm:text-sm truncate">{car.registration}</dd>
                 <p className="mt-0.5 text-[0.625rem] sm:text-[0.6875rem] text-neutral-500 truncate">On-spot transfer ready</p>
               </div>
 
-              <div className="rounded-xl sm:rounded-2xl bg-white p-2.5 sm:p-4 border border-emerald-100 min-w-0">
+              <div className="rounded-none bg-white p-2.5 sm:p-4 border border-emerald-100 min-w-0">
                 <dt className="font-bold uppercase tracking-wider text-neutral-400 text-[0.625rem] sm:text-xs truncate">Auction / Import Grade</dt>
                 <dd className="mt-1 font-bold text-neutral-900 text-xs sm:text-sm truncate">{car.auctionGrade}</dd>
                 <p className="mt-0.5 text-[0.625rem] sm:text-[0.6875rem] text-neutral-500 truncate">Verifiable sheet online</p>
               </div>
 
-              <div className="rounded-xl sm:rounded-2xl bg-white p-2.5 sm:p-4 border border-emerald-100 min-w-0">
+              <div className="rounded-none bg-white p-2.5 sm:p-4 border border-emerald-100 min-w-0">
                 <dt className="font-bold uppercase tracking-wider text-neutral-400 text-[0.625rem] sm:text-xs truncate">Mileage Verification</dt>
                 <dd className="mt-1 font-bold text-neutral-900 text-xs sm:text-sm truncate">{car.mileage}</dd>
                 <p className="mt-0.5 text-[0.625rem] sm:text-[0.6875rem] text-neutral-500 truncate">Guaranteed authentic</p>
@@ -275,7 +275,7 @@ export default function CarDetailClient({
           </div>
 
           {/* Full Technical Specifications Grid */}
-          <div className="rounded-2xl sm:rounded-3xl border border-neutral-200 bg-white p-4 sm:p-8 shadow-sm">
+          <div className="rounded-none border border-neutral-200 bg-white p-4 sm:p-8 shadow-sm">
             <h2 className="font-display text-lg sm:text-xl font-bold uppercase tracking-tight text-neutral-900">
               Technical Specifications
             </h2>
@@ -311,7 +311,7 @@ export default function CarDetailClient({
           </div>
 
           {/* Key Features Breakdown */}
-          <div className="rounded-2xl sm:rounded-3xl border border-neutral-200 bg-white p-4 sm:p-8 shadow-sm">
+          <div className="rounded-none border border-neutral-200 bg-white p-4 sm:p-8 shadow-sm">
             <h2 className="font-display text-lg sm:text-xl font-bold uppercase tracking-tight text-neutral-900">
               Key Features & Equipment
             </h2>
@@ -339,7 +339,7 @@ export default function CarDetailClient({
         {/* Right Column: Financing Calculator & Showroom Contact (4 Cols) */}
         <div className="space-y-6 sm:space-y-8 lg:col-span-4">
           {/* Interactive Financing Calculator */}
-          <div className="rounded-2xl sm:rounded-3xl border border-neutral-200 bg-white p-4 sm:p-7 shadow-sm">
+          <div className="rounded-none border border-neutral-200 bg-white p-4 sm:p-7 shadow-sm">
             <span className="text-xs font-bold uppercase tracking-wider text-amber-600">
               Bank Financing Calculator
             </span>
@@ -378,7 +378,7 @@ export default function CarDetailClient({
                       key={yr}
                       type="button"
                       onClick={() => setTenureYears(yr)}
-                      className={`rounded-lg sm:rounded-xl py-2 font-bold uppercase text-xs ${
+                      className={`rounded-none py-2 font-bold uppercase text-xs ${
                         tenureYears === yr
                           ? "bg-neutral-900 text-white"
                           : "bg-neutral-100 text-neutral-600 hover:bg-neutral-200"
@@ -390,7 +390,7 @@ export default function CarDetailClient({
                 </div>
               </div>
 
-              <div className="rounded-xl sm:rounded-2xl bg-neutral-50 p-3.5 sm:p-4 border border-neutral-100 text-center">
+              <div className="rounded-none bg-neutral-50 p-3.5 sm:p-4 border border-neutral-100 text-center">
                 <span className="block text-[0.6875rem] font-bold uppercase text-neutral-500">
                   Estimated Monthly EMI
                 </span>
@@ -406,7 +406,7 @@ export default function CarDetailClient({
                 href={getWhatsAppUrl(`Hi! I want to calculate bank financing options for the ${car.name} with ${downPercent}% down payment for ${tenureYears} years.`)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex w-full items-center justify-center gap-2 rounded-xl bg-neutral-900 py-3 font-display text-xs font-bold uppercase tracking-wider text-white hover:bg-amber-500 hover:text-black transition-colors"
+                className="flex w-full items-center justify-center gap-2 rounded-none bg-neutral-900 py-3 font-display text-xs font-bold uppercase tracking-wider text-white hover:bg-amber-500 hover:text-black transition-colors"
               >
                 Inquire Bank Financing
               </a>
@@ -414,7 +414,7 @@ export default function CarDetailClient({
           </div>
 
           {/* Visit Showroom Card */}
-          <div className="rounded-2xl sm:rounded-3xl border border-neutral-200 bg-neutral-900 p-4 sm:p-7 text-white">
+          <div className="lg:sticky lg:top-24 z-10 rounded-none border border-neutral-800 bg-neutral-900 p-4 sm:p-7 text-white shadow-2xl transition-all">
             <span className="font-display text-xs font-bold uppercase tracking-[0.2em] text-amber-400">
               Inspection & Viewing
             </span>
@@ -476,7 +476,7 @@ export default function CarDetailClient({
             <Link
               key={item.slug}
               href={`/inventory/${item.slug}`}
-              className="group flex flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-sm hover:shadow-md transition-all"
+              className="group flex flex-col overflow-hidden rounded-none border border-neutral-200 bg-white shadow-sm hover:shadow-md transition-all"
             >
               <div className="relative aspect-[16/10] w-full bg-neutral-950">
                 <Image
@@ -520,7 +520,7 @@ export default function CarDetailClient({
             <Close className="h-5 w-5 sm:h-6 sm:w-6" />
           </button>
 
-          <div className="relative max-h-[85vh] max-w-5xl w-full aspect-[16/10] overflow-hidden rounded-xl sm:rounded-2xl">
+          <div className="relative max-h-[85vh] max-w-5xl w-full aspect-[16/10] overflow-hidden rounded-none">
             <Image
               src={currentImage}
               alt={`${car.name} fullscreen view`}
@@ -540,7 +540,7 @@ export default function CarDetailClient({
             onClick={() => setAppointmentOpen(false)}
             className="absolute inset-0 bg-black/70 backdrop-blur-sm"
           />
-          <div className="relative z-10 w-full max-w-md max-h-[92vh] overflow-y-auto rounded-2xl sm:rounded-3xl border border-neutral-200 bg-white p-4 sm:p-6 shadow-2xl">
+          <div className="relative z-10 w-full max-w-md max-h-[92vh] overflow-y-auto rounded-none border border-neutral-200 bg-white p-4 sm:p-6 shadow-2xl">
             <div className="flex items-center justify-between border-b border-neutral-100 pb-3">
               <h3 className="font-display text-base font-bold uppercase text-neutral-900">
                 Book Private Viewing
@@ -608,7 +608,7 @@ export default function CarDetailClient({
                   />
                 </div>
 
-                <div className="rounded-xl bg-neutral-50 p-3 text-neutral-600">
+                <div className="rounded-none bg-neutral-50 p-3 text-neutral-600">
                   <p className="font-bold text-neutral-900">Showroom Address:</p>
                   <p className="mt-0.5">{KARACHI_SHOWROOM.address}</p>
                 </div>
